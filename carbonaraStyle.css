@@ -9,6 +9,7 @@
 }
 body {
     color: black;
+    padding-top: 24px;
 }
 body.dark {
     background-color: rgb(37, 35, 35);
@@ -45,9 +46,20 @@ nav a {
 }
 
 
-
-
-
+.gerichtHeader {
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+    padding-top: 24px;
+}
+.rezeptImg {
+    display: flex;
+    max-width: 700px;
+}
+.zutaten {
+    padding-top: 24px;
+    padding-left: 120px;
+}
 
 
 
@@ -58,4 +70,7 @@ nav a {
 .portionen {
     background-color: green;
     color: white;
+}
+.zubereitung {
+    padding-left: 120px;
 }
