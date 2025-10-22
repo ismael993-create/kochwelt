@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#themeSwitch {
+    width: 208px;
+    height: 48px;
+    font-size: 24px;
+}
+body {
+    color: black;
+}
+body.dark {
+    background-color: rgb(37, 35, 35);
+    color: white;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.logo {
+    height: 80px;
+}
+nav a {
+    padding-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+.menuLink:hover{
+    color: lightgreen;
+    transition: 150ms;
+    transform: 1 2 ;
+}
+.currentMenuLink {
+    color: green;
+    text-decoration: underline;
+}
+.currentMenuLink:hover {
+    color: lightgreen;
+    transition: 150ms;
+    transform: 1 2 ;
+}
+
+
+
+
+
+
+
+
+
+.portionenInput {
+    display: flex;
+}
+.portionen {
+    background-color: green;
+    color: white;
+}
