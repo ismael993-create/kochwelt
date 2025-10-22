@@ -8,6 +8,7 @@
     font-size: 24px;
 }
 body.dark {
+    font-size: 24px;
     background-color: rgb(37, 35, 35);
     color: white;
 }
