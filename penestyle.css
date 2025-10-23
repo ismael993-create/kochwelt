@@ -85,7 +85,7 @@ h1 {
     border-radius: 2px;
     cursor: pointer;
     width: 100px;
-    height: 25px;
+    height: 20px;
     font-weight: lighter;
 
 
@@ -105,6 +105,10 @@ body {
 
 .inputspace {
     padding-right: 10px;
+}
+
+.input_size {
+    width: 80px;
 }
 
 button {
@@ -149,85 +153,45 @@ button {
     font-weight: 500;
 }
 
-input {
-    width: 80px;
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
-
-.aot {
-    height: 100vh;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-
-    padding-top: 160px;
-
-}
 
 
 
 
 
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgb(247, 247, 247);
-
-}
-
-
-
-/* Liste selbst */
 #zutatenListe {
     list-style: none;
     padding: 0;
     margin: 0;
     display: grid;
-    gap: 12px;
-    /* Abstand zwischen den Zeilen */
+    gap: 5px;
+   
 }
 
-/* Jede Zeile wie im Screenshot: graue „Pills“ */
+
 #zutatenListe li {
-    background: #eeeeef;
-    /* hellgrau */
+background: #eeeeef;
     border-radius: 12px;
-    /* abgerundet */
-    padding: 12px 16px;
+    padding: 3px 50px;
     color: #383737;
     font-size: 16px;
     line-height: 1.4;
     min-height: 44px;
-    /* einheitliche Höhe */
-    display: flex;
+    display: flex
+;
     align-items: center;
 }
 
-/* Zahl etwas hervorheben, ohne HTML zu ändern */
+
 #zutatenListe li .menge {
     font-weight: 600;
     margin-right: 6px;
 }
 
-/* Optional: leichte Hover-Rückmeldung */
 #zutatenListe li:hover {
     background: #b8b8bb;
 }
 
-/* Falls du die Eingabezeile etwas angleichen willst */
+
 .calculate {
     display: flex;
 
@@ -342,7 +306,7 @@ footer a:hover {
         overflow-x: hidden;
     }
 
-
+}
 
 
 
