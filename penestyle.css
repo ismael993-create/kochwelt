@@ -97,6 +97,9 @@ h1 {
     margin-left: 120px;
 
 }
+li {
+        margin-left: 25px;
+    margin-right: 25px;}
 
 body {
     margin: 8px;
@@ -171,7 +174,7 @@ button {
 #zutatenListe li {
 background: #eeeeef;
     border-radius: 12px;
-    padding: 3px 50px;
+    padding: 3px 20px;
     color: #383737;
     font-size: 16px;
     line-height: 1.4;
