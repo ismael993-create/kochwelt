@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#themeSwitch {
+    width: 208px;
+    height: 48px;
+    font-size: 24px;
+}
+body.dark {
+    font-size: 24px;
+    background-color: rgb(37, 35, 35);
+    color: white;
+}
+nav a {
+    padding-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+.menuLink:hover{
+    color: lightgreen;
+    transition: 150ms;
+    transform: 1 2 ;
+}
+.currentMenuLink {
+    color: green;
+    text-decoration: underline;
+}
+.currentMenuLink:hover {
+    color: lightgreen;
+    transition: 150ms;
+    transform: 1 2 ;
+}

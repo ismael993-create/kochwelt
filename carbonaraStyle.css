@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#themeSwitch {
+    width: 208px;
+    height: 48px;
+    font-size: 24px;
+}
+body {
+    font-size: 24px;
+    color: black;
+    padding-top: 24px;
+}
+body.dark {
+    background-color: rgb(37, 35, 35);
+    color: white;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.logo {
+    height: 80px;
+}
+nav a {
+    padding-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+.menuLink:hover{
+    color: lightgreen;
+    transition: 150ms;
+    transform: 1 2 ;
+}
+.currentMenuLink {
+    color: green;
+    text-decoration: underline;
+}
+.currentMenuLink:hover {
+    color: lightgreen;
+    transition: 150ms;
+    transform: 1 2 ;
+}
+
+
+.gerichtHeader {
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 24px;
+}
+.gerichtHeader img{
+    border: 2px solid black;
+}
+.rezeptImg {
+    display: flex;
+    max-width: 700px;
+}
+.zutaten {
+    padding-top: 24px;
+    padding-left: 120px;
+    padding-right: 120px;
+
+}
+
+
+
+
+.portionenInput {
+    display: flex;
+}
+.portionen {
+    background-color: green;
+    color: white;
+}
+.zubereitung {
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 24px;
+}
