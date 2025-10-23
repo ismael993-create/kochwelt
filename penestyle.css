@@ -155,7 +155,9 @@ button {
     font-family: 'Raleway';
     font-weight: 500;
 }
-
+ p {
+    padding-right: 20px;
+  }
 
 
 
