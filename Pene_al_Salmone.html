@@ -1,0 +1,124 @@
+
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Penne al Salmone</title>
+    <link rel="icon" type="image/png" href="./img/logo_small.png" />
+    <link rel="stylesheet" href="./penestyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <script src="./penescript.js" defer></script>
+      
+  </head>
+
+  <body>
+     <div class="content">
+<header>
+  <img class="logo" src="./img/logo.png" alt="Logo" />
+ <nav class="normal_links">
+      <a href="index.html">Start</a>
+      <a href="Rezept.html">Rezept des Tages</a>
+      <a href="Kontakt.html">Kontakt</a>
+      <a href="Impressum.html">Impressum</a>
+    </nav>
+
+  <button class="btn_menu" id="menuToggle" type="button">info</button>
+
+  <div id="resp_menu" class="resp_menu_box closed_menu" aria-hidden="true">
+    <button class="btn_menu" id="menuClose" type="button">close menu</button>
+    <nav class="navlinks">
+      <a href="index.html">Start</a>
+      <a href="Rezept.html">Rezept des Tages</a>
+      <a href="Kontakt.html">Kontakt</a>
+      <a href="Impressum.html">Impressum</a>
+    </nav>
+  </div>
+  </div>
+</header>
+   
+
+    <h1>Penne al Salmone</h1>
+
+    <div class="image-container">
+      <img src="./img/pene_al_salmone.jpg" alt="Lachsnudeln" />
+    </div>
+
+    <div class="img_btn">
+      <button class="btn1" aria-label="cooktime">
+        <div class="icon_txt">
+          <img class="icon_img" src="./img/icons/clock-regular.svg" alt="cooktime" />
+          45 Min
+        </div>
+      </button>
+      <button aria-label="difficulty">
+        <div class="icon_txt">
+          <img class="icon_img" src="./img/icons/brain-solid.svg" alt="difficult" />
+          medium
+        </div>
+      </button>
+      <button aria-label="date">
+        <div class="icon_txt">
+          <img class="icon_img" src="./img/icons/calendar-alt-regular.svg" alt="calendar" />
+          23.10.2025
+        </div>
+      </button>
+    </div>
+
+    <div class="calculate">
+      <label class="inputspace" for="personen">Zutaten für: </label>
+      <input onclick="moreItems()" class="input_size" id="personen" type="number" min="1" value="2"  width="80px"/>
+      <input class="submitbtn" type="button" value="Portionen" id="rechnenBtn" />
+    </div>
+
+    <ul id="zutatenListe">
+    
+      <li data_pro_menge="83.33" data-einheit="g"> <p>Lachsfilet / Lachsfilets (TK aufgetaut): </p> <span class="menge">83.33</span> g</li>
+      <li data_pro_menge="1" data-einheit="EL"><p>Olivenöl: </p><span class="menge">1</span> EL</li>
+      <li data_pro_menge="0.17"><p>Zwiebel / Zwiebeln: </p><span class="menge">0.17</span></li>
+      <li data_pro_menge="0.17"><p>Zucchini: </p><span class="menge">0.17</span></li>
+      <li data_pro_menge="83.33" data-einheit="g"><p>Bandnudeln: </p><span class="menge">83.33</span> g</li>
+      <li data_pro_menge="25" data-einheit="g"><p>Frischkäse: </p><span class="menge">25</span> g</li>
+      <li data_pro_menge="8.33" data-einheit="g"><p>Sahne: </p><span class="menge">8.33</span> g</li>
+      <li data_pro_menge="0.17"><p>Zitrone (Abrieb): </p><span class="menge">0.17</span></li>
+      <li data_pro_menge="0.17" data-einheit="TL"><p>Salz: </p><span class="menge">0.17</span> TL</li>
+      <li data_pro_menge="0.08" data-einheit="TL"><p>Pfeffer:</p> <span class="menge">0.08</span> TL</li>
+      <li data_pro_menge="0.17" data-einheit="TL"><p>Chili: </p><span class="menge">0.17</span> TL</li>
+      <li data_pro_menge="16.67" data-einheit="g"><p>Cocktailtomaten: </p><span class="menge">16.67</span> g</li>
+      <li data_pro_menge="1"><p>Basilikumblätter: </p><span class="menge">1</span></li>
+    </ul>
+    <div>
+     
+      <h2>Zubereitung:</h2>
+      <div class="icon_2">
+      <button class="icon_txt" >
+        <img class="icon_img" src="./img/icons/clock-regular.svg" alt="utensils" /> c.a 45min
+      </button>
+       <button class="icon_txt">
+        <img class="icon_img" src="./img/icons/clock-regular.svg" alt="utensils" /> Gesamtzeit c.a 1h
+      </button>
+      </div>
+      
+      
+      
+      <span>Stelle einen großen Topf mit Wasser für die Nudeln auf. Schneide den Lachs in mundgerechte Stücke. Erwärme das Olivenöl in einer beschichteten Pfanne und brate die Lachsstücke darin rundherum an. Nimm sie aus der Pfanne heraus. Schneide die Zwiebel in feine Würfel und hoble die Zucchini in feine Scheiben. Brate die Zwiebelwürfel in der Pfanne 3 Minuten im restlichen Olivenöl an (falls keins vorhanden ist bitte nachfüllen). Füge die Zucchinischeiben hinzu. Brate sie etwa 5 Minuten an und gare in der Zwischenzeit die Nudeln nach Packungsanleitung. Lösche die Zucchini mit 100 ml Nudelwasser oder Weißwein ab und füge den Frischkäse, die Sahne, das Salz, Pfeffer, Chili und Zitronenabrieb hinzu und lass die Soße etwa 3-4 Minuten köcheln. Schütte die Nudeln ab. Halbiere die Tomaten und schneide den Basilikum in feine Streifen. Gib nun die Nudeln, Tomaten und das Basilikum mit in die Soße und rühre alles gut durch. Würze nach Bedarf mit Salz und Pfeffer nach und serviere die Nudelpfanne mit frisch geriebenem Parmesan.</span>
+      
+    <h3>erstellt von</h3>
+    <div class="profile">
+<img class="profile_pic" src="./img/IMG-20231029-WA0007.jpg" width="65px" alt="Profilbild_Ismael">
+<p>Ismael Toumi</p>
+    </div>
+    <footer>
+
+
+      <p>© 2025 Rezeptseite. Alle Rechte vorbehalten.</p>
+      
+    </footer>
+
+
+
+  </body>
+ 
+</html>
