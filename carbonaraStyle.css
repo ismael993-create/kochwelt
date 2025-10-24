@@ -84,3 +84,27 @@ nav a {
     padding-right: 120px;
     padding-top: 24px;
 }
+.icon_2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 30px;
+}
+.icon_img {
+    width: 20px;
+    height: 20px;
+
+}
+
+.icon_txt {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: black;
+    font-family: 'Raleway';
+    font-weight: 500;
+}
+
+p {
+    padding-right: 20px;
+}
