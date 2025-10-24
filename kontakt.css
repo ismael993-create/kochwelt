@@ -10,7 +10,6 @@
 body {
     font-size: 24px;
     color: black;
-    padding-top: 24px;
 }
 body.dark {
     background-color: rgb(37, 35, 35);
@@ -23,6 +22,7 @@ header {
     padding-left: 120px;
     padding-right: 120px;
     background-color: rgb(247, 247, 247);
+    
 }
 .logo {
     height: 80px;
@@ -52,8 +52,8 @@ main {
 }
 .kontaktFeld {
     background-color: gainsboro;
-    width: 400px;
-    height: 500px;
+    width: 500px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -71,6 +71,7 @@ p {
     width: 90%;
 }
 input {
+    padding-right: 15px;
     width: 90%;
     border-radius: 2%;
     

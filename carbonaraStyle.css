@@ -10,7 +10,6 @@
 body {
     font-size: 24px;
     color: black;
-    padding-top: 24px;
 }
 body.dark {
     background-color: rgb(37, 35, 35);

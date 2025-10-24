@@ -1,21 +1,38 @@
-
-header img {
-    width: 200px;
+* {
+    margin: 0;
+    padding: 0;
 }
-
-
-
-img {
-    max-width: 100%;
-    height: auto;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
+    background-color: rgb(247, 247, 247);
 }
-
-
-.menuLink {
-    font-size: 20px;
+.logo {
+    height: 80px;
+}
+nav a {
+    padding-right: 20px;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: black;
 }
+.menuLink:hover{
+    color: lightgreen;
+    transition: 150ms;
+    transform: 1 2 ;
+}
+.currentMenuLink {
+    color: green;
+    text-decoration: underline;
+}
+.currentMenuLink:hover {
+    color: lightgreen;
+    transition: 150ms;
+    transform: 1 2 ;
+}
+
 
 
 .main{
@@ -23,7 +40,9 @@ img {
     flex-direction: column;
     align-items: center;
 }
-
+h1 {
+    padding-top: 32px;
+}
 
 
 .gallery {
@@ -50,7 +69,9 @@ img {
 
 
 
-
+body {
+    font-size: 24px;
+}
 
 
 
