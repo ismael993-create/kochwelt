@@ -71,6 +71,7 @@ p {
     width: 90%;
 }
 input {
+    padding-right: 15px;
     width: 90%;
     border-radius: 2%;
     
