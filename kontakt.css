@@ -52,8 +52,8 @@ main {
 }
 .kontaktFeld {
     background-color: gainsboro;
-    width: 400px;
-    height: 500px;
+    width: 500px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     text-align: left;
