@@ -1,28 +1,32 @@
-function fmt(n) {
-        let r = Math.round(n * 100) / 100;
-        return Number.isInteger(r) ? String(r) : String(r).replace(/(\.\d{2})\d+$/, "$1").replace(/\.00$/, "");
-      }
 
-      function updateZutaten() {
-        let personenInput = document.getElementById("personen");
-        let personen = Math.max(1, parseInt(personenInput.value || "1", 10));
-        let items = document.querySelectorAll("#zutatenListe li");
 
-        items.forEach(li => {
-          let basis = parseFloat(li.getAttribute("data-pro-menge")); 
-          if (isNaN(basis)) return;
-          let neueMenge = basis * personen;
-          let span = li.querySelector(".menge");
-          if (span) span.textContent = fmt(neueMenge);
-        });
-      }
+ function moreItems(data_pro_menge) {
+let personen = document.getElementById("personen").value;
+let liste = document.getElementById("zutatenListe");
+  let zutaten = liste.getElementsByTagName("li");
+  for (let i = 0; i < zutaten.length; i++) { let proMenge = zutaten[i].getAttribute("data_pro_menge");
+    let einheit = zutaten[i].getAttribute("data-einheit");
+ let neueMenge = proMenge * personen;
+   neueMenge = neueMenge.toFixed(2);
+   zutaten[i].getElementsByClassName("menge")[0].textContent = neueMenge;
+  }
+}
 
-     
-      document.addEventListener("DOMContentLoaded", () => {
-        document.getElementById("personen").addEventListener("input", updateZutaten);
-        document.getElementById("rechnenBtn").addEventListener("click", updateZutaten);
-        
-        updateZutaten();
-      });
 
-    
+let box = document.getElementById('resp_menu');
+let btnOpen = document.getElementById('menuToggle');
+let btnClose = document.getElementById('menuClose');
+
+function openClosedRespmenu() {
+  if (box.classList.contains('closed_menu')) {
+    box.classList.remove('closed_menu');
+    box.setAttribute('aria-hidden', 'false');
+  } else {
+    box.classList.add('closed_menu');
+    box.setAttribute('aria-hidden', 'true');
+  }
+}
+
+
+btnOpen.onclick = openClosedRespmenu;
+btnClose.onclick = openClosedRespmenu;
