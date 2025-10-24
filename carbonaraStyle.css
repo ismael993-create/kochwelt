@@ -60,6 +60,7 @@ nav a {
 .rezeptImg {
     display: flex;
     max-width: 700px;
+    border-radius: 4%;
 }
 .zutaten {
     padding-top: 24px;
