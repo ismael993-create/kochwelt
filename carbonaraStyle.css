@@ -81,13 +81,13 @@ nav a {
 .zubereitung {
     padding-left: 120px;
     padding-right: 120px;
-    padding-top: 24px;
+    padding-top: 46px;
 }
 .icon_2 {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
-    margin-bottom: 30px;
+   
 }
 .icon_img {
     width: 20px;
