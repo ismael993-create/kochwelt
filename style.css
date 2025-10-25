@@ -105,7 +105,7 @@ nav a {
 .currentMenuLink {
     color: green;
     text-decoration: underline;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .currentMenuLink:hover {

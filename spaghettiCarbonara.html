@@ -18,7 +18,7 @@
             <a href="./index.html" class="menuLink">Start</a>
             <a href="./spaghettiCarbonara.html" class="currentMenuLink">Rezept des Tages</a>
             <a href="./kontakt.html" class="menuLink">Kontakt</a>
-            <a href="#" class="menuLink">Impressum</a>
+            <a href="./impressum.html" class="menuLink">Impressum</a>
         </nav>
     </header>
     <main>
@@ -30,7 +30,7 @@
       <button class="btn1" aria-label="cooktime">
         <div class="icon_txt">
           <img class="icon_img" src="./img/icons/clock-regular.svg" alt="cooktime" />
-          45 Min
+          30 Min
         </div>
       </button>
       <button aria-label="difficulty">
@@ -48,32 +48,36 @@
     </div>
         </section>
         <section class="zutaten">
-            <div class="portionenInput">
-                <p>Zutaten für: </p>
-                <input type="number" value="2">
-                <button class="portionen">Portionen</button>
-            </div>
-            <ul>
-                <li>200g Spaghetti</li>
-                <li>100g durchwachsener Speck</li>
-                <li>2 frische Eier</li>
-                <li>50g geriebener Parmesan</li>
-                <li>Salz und schwarzer Pfeffer</li>
-                <li>optional: etwas Olivenöl</li>
-            </ul>
+          <div class="calculate">
+          <label class="inputspace" for="personen">Zutaten für: </label>
+          <input onclick="moreItems()" class="input_size" id="personen" type="number" min="1" value="2"  width="80px"/>
+          <input class="submitbtn" type="button" value="Portionen" id="rechnenBtn" />
+        </div>
+        <ul id="zutatenListe">
+    
+          <li data_pro_menge="100" data-einheit="g"> <p>Spaghrtti:</p> <span class="menge">100</span> g</li>
+          <li data_pro_menge="1" data-einheit="Stck"><p>Eier: </p><span class="menge">1</span> Stck</li>
+          <li data_pro_menge="50" data-einheit="g"><p>durchwachsener Speck</p><span class="menge">50</span> g</li>
+          <li data_pro_menge="25" data-einheit="g"><p>geriebener Parmesan: </p><span class="menge">25</span> g</li>
+          <li data_pro_menge="0.5" data-einheit="priese"><p>Salz: </p><span class="menge">0.5</span> priese</li>
+          <li data_pro_menge="0.5" data-einheit="priese"><p>Schwarzer Pfeffer:</p> <span class="menge">0.5</span> priese</li>
+          
+        </ul>
+    <div>
         </section>
         <section class="zubereitung">
             
-            <p>
+            
               <h2>Zubereitung</h2>
               <div class="icon_2">
                 <button class="icon_txt" >
-                    <img class="icon_img" src="./img/icons/clock-regular.svg" alt="utensils" /> c.a 45min
+                    <img class="icon_img" src="./img/icons/clock-regular.svg" alt="utensils" /> c.a 30min
                 </button>
                 <button class="icon_txt">
-                    <img class="icon_img" src="./img/icons/clock-regular.svg" alt="utensils" /> Gesamtzeit c.a 1h
+                    <img class="icon_img" src="./img/icons/clock-regular.svg" alt="utensils" /> Gesamtzeit c.a 45min
                 </button>
             </div>  
+            <p>
 <br>
 <br>
 1. Spaghetti kochen: <br>
@@ -119,5 +123,6 @@ Richte die Spaghetti Carbonara auf Tellern an, <br>
 
     </footer>
     <script src="script.js"></script>
+    <script src="penescript.js"></script>
 </body>
 </html>
