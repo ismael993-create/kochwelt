@@ -195,3 +195,18 @@ nav a {
     color: #2a7b2a;
 }
 /*rezept.html Seite*/
+
+
+footer {
+    background-color: #333;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 14px;
+    margin: 0 -8px -8px -8px;
+    padding-top: 60px;
+}
