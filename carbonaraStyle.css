@@ -45,8 +45,13 @@ nav a {
     transition: 150ms;
     transform: 1 2 ;
 }
-
-
+#zuRezepte {
+    
+    margin-left: 120px;
+}
+#zuRezepte a {
+    text-decoration: none;
+}
 .gerichtHeader {
     display: flex;
     flex-direction: column;
@@ -62,11 +67,35 @@ nav a {
     max-width: 700px;
     border-radius: 4%;
 }
-.zutaten {
-    padding-top: 24px;
-    padding-left: 120px;
-    padding-right: 120px;
+.calculate {
+    display: flex;
+    padding-left: 120PX;
+    margin: 8px;
+}
+.zutaten input {
+    text-align: center;
+}
+#zutatenListe {
+    list-style: none;
+    display: grid;
+    gap: 5px;
 
+}
+#zutatenListe {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    margin-left: 120px;
+    margin-right: 120px;
+    background: #eeeeef;
+    border-radius: 12px;
+    padding: 3px 20px;
+    color: #383737;
+    font-size: 16px;
+    line-height: 1.4;
+    min-height: 44px;
+    
 }
 
 
