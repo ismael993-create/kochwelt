@@ -16,7 +16,7 @@ header {
 }
 
 body.dark {
-    font-size: 24px;
+    font-size: 18px;
    
     background-color: rgb(37, 35, 35);
     color: white !important;
