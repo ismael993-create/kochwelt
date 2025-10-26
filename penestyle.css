@@ -42,11 +42,7 @@ body.dark {
     margin-right: 120px;
 }
 
-.normal_links :hover {
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    margin-bottom: 10px;
-}
+
 
 
 .raleway {
@@ -344,7 +340,7 @@ footer {
     display: none;
 }
 
-@media only screen and (min-width: 250px) and (max-width: 1050px) {
+@media only screen and (min-width: 250px) and (max-width: 1100px) {
     .btn_menu {
         display: inline;
     }
