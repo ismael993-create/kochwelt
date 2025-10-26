@@ -31,12 +31,45 @@ nav a {
     text-decoration: none;
     color: black;
 }
+.content {
+    position: relative;
 
+}
+
+.btn_menu {
+    display: none;
+}
+
+.resp_menu_box {
+    position: fixed;
+    top: 150px;
+    right: 0;
+    width: 175px;
+    height: 225px;
+    background: #b6bec7;
+    border-radius: 0 0 0 8px;
+
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+
+
+.closed_menu {
+    transform: translateX(100%);
+}
 
 .resp_menu_box.is-open {
     transform: translateX(0);
 }
 
+button {
+    border-radius: 8px;
+}
 .menuLink:hover{
     color: lightgreen;
     transition: 150ms;
