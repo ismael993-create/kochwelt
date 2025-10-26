@@ -74,18 +74,20 @@ p {
 input {
     padding-right: 15px;
     width: 90%;
-    border-radius: 2%;
     
 }
 .deinName {
     padding-bottom: 5px;
+        border-radius: 5px;
 }
 .deineEmail {
     padding-bottom: 5px;
+    border-radius: 5px;
 }
 .deineNachricht {
     padding-bottom: 50%;
     display: flex;
+    border-radius: 5px;
     
 }
 .abschicken {
@@ -93,6 +95,7 @@ input {
     margin-top: 50px;
     background-color: green;
         color: white;
+        border-radius: 5px;
 }
 
 footer {
