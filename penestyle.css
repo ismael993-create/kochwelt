@@ -42,11 +42,7 @@ body.dark {
     margin-right: 120px;
 }
 
-.normal_links :hover {
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    margin-bottom: 10px;
-}
+
 
 
 .raleway {
