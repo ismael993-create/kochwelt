@@ -6,8 +6,34 @@ header {
     align-items: baseline;
 }
 
+#themeSwitch {
+    width: 88px;
+    height: 48px;
+    font-size: 15px;
+    position: absolute;
+    top: 30px;
+    left: 25px;
+}
+
+body.dark {
+    font-size: 24px;
+   
+    background-color: rgb(37, 35, 35);
+    color: white !important;
+   h1 {
+       color: white !important;
+   }
+   header {
+       background-color: white !important;
+       margin: -8px;
+   }
+
+
+}
+
+
 .logo {
-    margin-left: 120px;
+    margin-left: 150px;
 }
 
 .normal_links {
@@ -32,52 +58,55 @@ header {
 
 .content {
     position: relative;
-    
+
 }
+
 .btn_menu {
     display: none;
 }
 
 .resp_menu_box {
-  position: fixed;     
-  top: 150px;
-  right: 0;
-  width: 175px;
-  height: 225px;
-  background: #b6bec7;
-  border-radius: 0 0 0 8px;
+    position: fixed;
+    top: 150px;
+    right: 0;
+    width: 175px;
+    height: 225px;
+    background: #b6bec7;
+    border-radius: 0 0 0 8px;
 
-  display:none;
-  flex-direction: column;
-  gap: 12px;
+    display: none;
+    flex-direction: column;
+    gap: 12px;
 
-  transform: translateX(0);
-  transition: transform 0.3s ease-in-out;
-  z-index: 1;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
 }
 
 
-.closed_menu { transform: translateX(100%); }
+.closed_menu {
+    transform: translateX(100%);
+}
+
 .resp_menu_box.is-open {
-  transform: translateX(0);
+    transform: translateX(0);
 }
 
 
 
 
 .navlinks {
-    
+
     font-family: "Raleway", sans-serif;
-   
+
     gap: 10px;
     margin-right: 120px;
-       
+
     padding-left: 40px;
     text-align: center;
-    display: flex
-;
+    display: flex;
     flex-direction: column;
-   
+
 }
 
 
@@ -86,18 +115,18 @@ a {
     text-decoration: none;
     color: black;
     font-weight: 700;
- 
-    
+
+
 }
 
 a:hover {
     color: #3caf22;
-   
+
 
     text-underline-offset: 15px;
     text-decoration-thickness: 3px;
     font-size: 16px;
-    transition: all 0.1s ease;
+    
 
 }
 
@@ -317,14 +346,16 @@ footer {
 
 @media only screen and (min-width: 250px) and (max-width: 1050px) {
     .btn_menu {
-    display: inline;
+        display: inline;
+    }
+
+    .normal_links {
+        display: none;
+    }
 }
 
-.normal_links {
-    display: none;}
-}
-    .resp_menu_box {
-   display: inline;
+.resp_menu_box {
+    display: inline;
     width: 133px;
     height: 206px;
     font-size: smaller;
@@ -369,22 +400,24 @@ footer {
     }
 
     .resp_menu_box {
-   display: inline;
-    width: 133px;
-    height: 206px;
-    font-size: smaller;
-}
-a:hover {
-    font-size: medium;}
+        display: inline;
+        width: 133px;
+        height: 206px;
+        font-size: smaller;
+    }
+
+    a:hover {
+        font-size: medium;
+    }
 
 }
 
 @media only screen and (min-width: 1050px) {
     .btn_menu {
-    display: none;
-}
+        display: none;
+    }
 
     .resp_menu_box {
-   display: none;
-}
+        display: none;
+    }
 }
