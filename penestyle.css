@@ -11,7 +11,7 @@ header {
     height: 48px;
     font-size: 15px;
     position: absolute;
-    top: 30px;
+    top: 50px;
     left: 25px;
 }
 
@@ -343,6 +343,9 @@ footer {
 @media only screen and (min-width: 250px) and (max-width: 1100px) {
     .btn_menu {
         display: inline;
+            position: absolute;
+    right: 20px;
+    top: 50px;
     }
 
     .normal_links {
@@ -358,12 +361,22 @@ footer {
 }
 
 
+@media only screen and (min-width: 1100px) {
+    .btn_menu {
+        display: none;
+    }
+
+    .resp_menu_box {
+        display: none;
+    }
+}
 
 
 
 
 
-@media only screen and (min-width: 250px) and (max-width: 650px) {
+
+@media only screen and (min-width: 400px) and (max-width: 550px) {
 
 
 
@@ -408,12 +421,118 @@ footer {
 
 }
 
-@media only screen and (min-width: 1100px) {
-    .btn_menu {
-        display: none;
+@media only screen and (min-width: 0px) and (max-width: 650px) {
+
+#themeSwitch {
+    width: 50px;
+    height: 25px;
+    font-size: 8px;
+    position: absolute;
+    top: 12px;
+    left: 0px;
+}
+
+button {
+    padding: 5px 3px;
+    font-size: 12px;
+    border-radius: 5px;
+    background-color: #d6dbd5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s 
+ease;
+    margin: 4px;
+    display: flex
+;
+    justify-content: flex-start;
+}
+
+.btn_menu {
+    position: absolute;
+            right: 5px;
+    top: 15px;
+}
+
+
+header {
+    display: flex
+;
+    justify-content: center;
+}
+
+
+
+
+    header img {
+        width: 130px;
+    margin-left: 89px;
+
+    }
+
+    h1 {
+        font-size: 15px;
+        margin-left: 80px;
+
+    }
+
+
+   .image-container {
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    padding-left: 60px;
+}
+
+p {
+    padding-right: 10px;
+}
+
+
+.logo {
+    margin-left: 35px;
+}
+
+
+    .icon_txt {
+        font-size: 10px;
+    }
+
+    .img_btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn1 {
+        margin-left: 0px;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 
     .resp_menu_box {
-        display: none;
+        display: inline;
+        width: 133px;
+        height: 206px;
+        font-size: smaller;
     }
+
+    a:hover {
+        font-size: medium;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
