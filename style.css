@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
+    background-color: rgb(247, 247, 247);
+}
+.logo {
+    height: 80px;
+}
+nav a {
+    padding-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+.menuLink:hover{
+    color: lightgreen;
+    transition: 150ms;
+    transform: 1 2 ;
+}
+.currentMenuLink {
+    color: green;
+    text-decoration: underline;
+}
+.currentMenuLink:hover {
+    color: lightgreen;
+    transition: 150ms;
+    transform: 1 2 ;
+}
+
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    padding-top: 32px;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+body {
+    font-size: 24px;
+}
+
+
+
+#themeSwitch {
+    width: 86px;
+    height: 24px;
+    font-size: 14px;
+    position: relative;
+    z-index: 20;
+}
+
+body.dark {
+    font-size: 24px;
+    background-color: rgb(37, 35, 35);
+    color: white;
+}
+
+nav a {
+    padding-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.menuLink:hover {
+    color: lightgreen;
+    transition: 150ms;
+    transform: 1 2;
+}
+
+.currentMenuLink {
+    color: green;
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+.currentMenuLink:hover {
+    color: lightgreen;
+    transition: 150ms;
+    transform: 1 2;
+}
+
+
+
+
+
+
+/*rezept.html Seite*/
+
+.rezept-card {
+    display: flex;
+    align-items: flex-start;
+    /* Bild und Text oben ausrichten */
+    gap: 20px;
+    /* Abstand zwischen Bild und Text */
+    /* max-width: 400px; */
+    margin: 120px auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rezept-card img.gericht-bild {
+    width: 400px;
+    /* Bild kleiner machen */
+    height: auto;
+    border-radius: 12px;
+}
+
+.rezept-info {
+    flex: 1;
+    /* Textbereich nimmt restliche Breite ein */
+}
+
+.rezept-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #2a7b2a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.rezept-button:hover {
+    background-color: #1f5c1f;
+}
+
+
+
+/*bandnudel-rezept.html */
+
+.rezept-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 40px;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+
+/* statt .rezept-container img */
+.rezept-container .hero {
+  width: 1000px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.iconFeld {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+    width: 100%;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+
+
+.iconBox {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    /* Icon und Text vertikal zentrieren */
+    gap: 10px;
+    /* Abstand zwischen Icon und Text */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.iconBox img {
+    width: 30px;
+    /* Größe der Icons */
+    height: 30px;
+    object-fit: contain;
+    margin-bottom: 6px;
+}
+
+.iconBox span {
+    font-size: 20px;
+}
+
+
+
+
+.portionChanger {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* gap: 25px; */
+    margin-top: 60px;
+    width: 100%;
+    padding-left: 0;
+    box-sizing: border-box;
+
+}
+
+
+.portionChanger input {
+    /* Input füllt den freien Platz */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+
+}
+
+.inputFeld input:focus {
+    border-color: #f9c907;
+    /* Akzentfarbe beim Fokus */
+    box-shadow: 0 0 5px rgba(255, 123, 0, 0.3);
+}
+
+
+
+.changerBtn {
+    padding: 10px 30px;
+    background-color: #55ea05;
+    /* orangener Button */
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.inputFeld button:hover {
+    background-color: #f9c907;
+    /* dunkler beim Hover */
+}
+
+
+
+
+
+
+.zutatenFeld {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    
+}
+
+.zutatenFeld h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.zutatenBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+
+}
+
+.zutatenBox.grau {
+    background-color: #f0f0f0;
+}
+
+.zutatenBox.weiss {
+    background-color: #ffffff;
+}
+
+.zutatenBox .menge {
+    font-weight: bold;
+    width: 60px;
+    text-align: right;
+}
+
+.zutatenBox .zutatName {
+    font-size: 16px;
+}
+
+.iconFeld2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 25px;
+    width: 100%;
+    padding-left: 0;
+    box-sizing: border-box;
+
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+.profile_img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;         
+  border: 4px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: block;
+}
+
+
+/*bandnudel-rezept.html Seite*/
+
+
+footer {
+    background-color: #333;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 14px;
+    margin: 0 -8px -8px -8px;
+    padding-top: 60px;
+}

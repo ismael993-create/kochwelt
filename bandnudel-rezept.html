@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezepte des Tages - Kochwelt</title>
+    <link rel="icon" type="image/png" href="./img/logo_small.png" />
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <section class="aot">
+        <header class="header">
+            <button id="themeSwitch">🌙 Dunkel</button>
+            <img class="logo" src="./img/logo.png" alt="Kochwelt-Logo">
+            <nav class="menu">
+                <a href="./index.html" class="currentMenuLink">Start</a>
+                <a href="./rezepte.html" class="menuLink">Rezept des Tages</a>
+                <a href="./kontakt.html" class="menuLink">Kontakt</a>
+                <a href="./impressum.html" class="menuLink">Impressum</a>
+            </nav>
+        </header>
+
+
+
+        <div class="rezept-container">
+            <h1>Zucchini-Karotten-Bandnudeln mit Hähnchen und Tomaten</h1>
+            <!-- großes Bild -->
+            <img class="hero" src="img/food10.png" alt="Bandnudo-Hini">
+
+
+
+
+            <div class="iconFeld">
+                <div class="iconBox">
+                    <img src="./img/icons/clock-regular.svg" alt="Zeit Icon">
+                    <span>30 Min</span>
+                </div>
+                <div class="iconBox">
+                    <img src="./img/icons/brain-solid.svg" alt="Schwierigkeitsgrad Icon">
+                    <span>Mittel</span>
+                </div>
+                <div class="iconBox">
+                    <img src="./img/icons/calendar-alt-regular.svg" alt="Kalender Icon">
+                    <span>27.10.2025</span>
+                </div>
+
+            </div>
+
+
+
+            <div class="portionChanger">
+                <a>Zutaten für</a>
+                <input type="text" placeholder="4" class="inputChanger" />
+                <button class="changerBtn">Portion</button>
+            </div>
+
+            <!-- Neues Feld für berechnete Zutaten -->
+            <div class="zutatenOutput"></div>
+
+            <div class="zutatenFeld">
+                <div class="zutatenBox grau" data-menge="500" data-einheit="g">
+                    <span class="menge">500 g</span> <span class="zutatName">Bandnudeln</span>
+                </div>
+                <div class="zutatenBox weiss" data-menge="500" data-einheit="g">
+                    <span class="menge">500 g</span> <span class="zutatName">Hähnchenbrustfilet(s)</span>
+                </div>
+                <div class="zutatenBox grau" data-menge="2" data-einheit="EL">
+                    <span class="menge">2 EL</span> <span class="zutatName">Olivenöl</span>
+                </div>
+                <div class="zutatenBox weiss" data-menge="1" data-einheit="TL">
+                    <span class="menge">1 TL</span> <span class="zutatName">Currypaste</span>
+                </div>
+                <div class="zutatenBox grau" data-menge="3" data-einheit="">
+                    <span class="menge">3</span> <span class="zutatName">Zucchini</span>
+                </div>
+                <div class="zutatenBox weiss" data-menge="2" data-einheit="">
+                    <span class="menge">2</span> <span class="zutatName">Karotten</span>
+                </div>
+                <div class="zutatenBox grau" data-menge="3" data-einheit="EL">
+                    <span class="menge">3 EL</span> <span class="zutatName">Wasser</span>
+                </div>
+                <div class="zutatenBox weiss" data-menge="1" data-einheit="TL">
+                    <span class="menge">1 TL</span> <span class="zutatName">Brühepulver</span>
+                </div>
+                <div class="zutatenBox grau" data-menge="4" data-einheit="">
+                    <span class="menge">4</span> <span class="zutatName">Tomaten</span>
+                </div>
+                <div class="zutatenBox weiss" data-menge="3" data-einheit="EL">
+                    <span class="menge">3 EL</span> <span class="zutatName">Tomatenmark</span>
+                </div>
+                <div class="zutatenBox grau" data-menge="150" data-einheit="g">
+                    <span class="menge">150 g</span> <span class="zutatName">Ziegenfrischkäse</span>
+                </div>
+                <div class="zutatenBox weiss">
+                    <span class="menge">-</span> <span class="zutatName">Petersilie</span>
+                </div>
+                <div class="zutatenBox grau">
+                    <span class="menge">-</span> <span class="zutatName">Salz, Pfeffer</span>
+                </div>
+            </div>
+
+            <div class="iconFeld2">
+                <h2>Zubereitung</h2>
+
+                <div class="iconBox">
+                    <img src="./img/icons/clock-regular.svg" alt="Zeit Icon">
+                    <span>Gesamtzeit ca 30 Min </span>
+                </div>
+
+
+
+            </div>
+
+
+
+            <p>1. Das Hähnchenbrustfilet waschen, mit Küchenpapier abtupfen und in mundgerechte Stücke schneiden.
+                Das Olivenöl mit der roten Currypaste in einer beschichteten Pfanne erhitzen und das Hähnchenfleisch
+                darin von allen Seiten knusprig braten.</p>
+            <p>2. Währenddessen die Zucchini waschen und die Karotten schälen. Nun mit einem Sparschäler rundherum
+                die „Bandnudeln“ abschälen, bei den Zucchini möglichst das innere Kerngehäuse übrig lassen, die
+                Karotten können komplett verwendet werden. Sollten die Scheiben zu breit werden, kann man das Gemüse
+                mit einem Messer vor dem Abschälen längs einschneiden.</p>
+            <p>3. Das fertig gebratene Hähnchenfleisch herausnehmen und dabei möglichst den Bratensaft in der Pfanne
+                lassen. Die Gemüsebandnudeln in Wasser und Brühe mit dem Bratensaft aufkochen und einige Minuten
+                garen lassen. Derweil die Tomaten würfeln und zusammen mit dem Tomatenmark zum Gemüse geben.</p>
+            <p>4. Zum Schluss den Ziegenfrischkäse und das Hähnchenfleisch zugeben und alles noch einmal unter
+                Rühren erhitzen. Mit Salz und Pfeffer abschmecken und servieren.</p>
+
+            <h3>Rezept erstellt von</h3>
+            <div class="profile">
+                <img class="profile_img" src="./img/profile.png" height="65px" alt="Umbekannte">
+                <p>Nick Ezenwa</p>
+            </div>
+
+            <footer>
+                <p>© 2025 Rezeptseite. Alle Rechte vorbehalten.</p>
+
+            </footer>
+
+
+
+
+
+        </div>
+    </section>
+
+
+</body>
+
+</html>

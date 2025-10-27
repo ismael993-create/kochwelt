@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept-Spaghetti Carbonara</title>
+    <link rel="icon" type="image/png" href="./img/logo_small.png" />
+    <link rel="stylesheet" href="carbonaraStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+      <div class="content">
+<header>
+  <button id="themeSwitch">🌙 Dunkel</button>
+  <img class="logo" src="./img/logo.png" alt="Logo" />
+ <nav class="normal_links">
+      <a href="index.html">Start</a>
+      <a href="rezepte.html">Rezept des Tages</a>
+      <a href="Kontakt.html">Kontakt</a>
+      <a href="Impressum.html">Impressum</a>
+    </nav>
+
+  <button class="btn_menu" id="menuToggle" type="button">info</button>
+
+  <div id="resp_menu" class="resp_menu_box closed_menu" aria-hidden="true">
+    <button class="btn_menu" id="menuClose" type="button">close menu</button>
+    <nav class="navlinks">
+      <a href="index.html">Start</a>
+      <a href="rezepte.html">Rezept des Tages</a>
+      <a href="Kontakt.html">Kontakt</a>
+      <a href="Impressum.html">Impressum</a>
+    </nav>
+  </div>
+  </div>
+</header>
+    
+    <main>
+        <section class="gerichtHeader">
+            <h1>Spaghetti Carbonara</h1>
+            <img class="rezeptImg" src="./img/spaghettiCarbonara.jpg" alt="Bild Spaghetti Carbonara">
+    
+    <div class="img_btn">
+      <button class="btn1" aria-label="cooktime">
+        <div class="icon_txt">
+          <img class="icon_img" src="./img/icons/clock-regular.svg" alt="cooktime" />
+          30 Min
+        </div>
+      </button>
+      <button aria-label="difficulty">
+        <div class="icon_txt">
+          <img class="icon_img" src="./img/icons/brain-solid.svg" alt="difficult" />
+          medium
+        </div>
+      </button>
+      <button aria-label="date">
+        <div class="icon_txt">
+          <img class="icon_img" src="./img/icons/calendar-alt-regular.svg" alt="calendar" />
+          23.10.2025
+        </div>
+      </button>
+    </div>
+        </section>
+        <section class="zutaten">
+          <div class="calculate">
+          <label class="inputspace" for="personen">Zutaten für: </label>
+          <input onclick="moreItems()" class="input_size" id="personen" type="number" min="1" value="2"  width="80px"/>
+          <input class="submitbtn" type="button" value="Portionen" id="rechnenBtn" />
+        </div>
+        <ul id="zutatenListe">
+    
+          <li data_pro_menge="100" data-einheit="g"> <p>Spaghetti:</p> <span class="menge">100</span> g</li>
+          <li data_pro_menge="1" data-einheit="Stck"><p>Eier: </p><span class="menge">1</span> Stck</li>
+          <li data_pro_menge="50" data-einheit="g"><p>durchwachsener Speck</p><span class="menge">50</span> g</li>
+          <li data_pro_menge="25" data-einheit="g"><p>geriebener Parmesan: </p><span class="menge">25</span> g</li>
+          <li data_pro_menge="0.5" data-einheit="priese"><p>Salz: </p><span class="menge">0.5</span> priese</li>
+          <li data_pro_menge="0.5" data-einheit="priese"><p>Schwarzer Pfeffer:</p> <span class="menge">0.5</span> priese</li>
+          
+        </ul>
+    <div>
+        </section>
+        <section class="zubereitung">
+            
+            
+              <h2>Zubereitung</h2>
+              <div class="icon_2">
+                <button class="icon_txt" >
+                    <img class="icon_img" src="./img/icons/clock-regular.svg" alt="utensils" /> c.a 30min
+                </button>
+                <button class="icon_txt">
+                    <img class="icon_img" src="./img/icons/clock-regular.svg" alt="utensils" /> Gesamtzeit c.a 45min
+                </button>
+            </div>  
+            <p>
+<br>
+<br>
+1. Spaghetti kochen: <br>
+Bringe einen großen Topf mit leicht gesalzenem Wasser zum Kochen. <br>
+ Gib die Spaghetti hinein und koche sie nach Packungsanweisung al dente. <br>
+  Während die Nudeln kochen, kannst du bereits mit der Soße beginnen. <br>
+<br>
+2. Speck anbraten: <br>
+Schneide den Pancetta oder Speck in kleine Würfel oder feine Streifen. <br>
+Erhitze eine Pfanne auf mittlerer Stufe und gib den Speck hinein. <br>
+ Brate ihn ohne zusätzliches Fett, bis er schön knusprig ist und etwas Fett austritt. <br>
+Wenn du möchtest, kannst du ein paar Tropfen Olivenöl hinzufügen. <br>
+<br>
+3. Eier und Käse verrühren: <br>
+In einer Schüssel verquirlst du die Eier mit dem geriebenen Parmesan oder Pecorino. <br>
+Würze die Mischung mit frisch gemahlenem schwarzen Pfeffer. <br>
+ Salz ist meist nicht nötig, da Speck und Käse bereits salzig sind. <br>
+<br>
+4. Spaghetti und Speck verbinden: <br>
+Wenn die Spaghetti fertig sind, <br>
+ schöpfe eine kleine Tasse vom Kochwasser ab und gieße die Nudeln ab. <br>
+ Gib die heißen Spaghetti sofort in die Pfanne mit dem Speck und vermische alles gut, <br>
+ sodass die Nudeln das Aroma aufnehmen. <br>
+  Nimm die Pfanne anschließend vom Herd, damit die Eier später nicht stocken. <br>
+<br>
+5. Soße anrühren: <br>
+Gieße nun die Ei-Käse-Mischung über die warmen Spaghetti und rühre kräftig um, <br>
+ bis die Soße cremig wird. <br>
+ Falls sie zu dick erscheint, gib etwas vom heißen Nudelwasser hinzu. <br>
+  Die Wärme der Nudeln reicht aus, um die Eier sanft zu binden, ohne dass sie zu Rührei werden. <br>
+<br>
+6. Servieren: <br>
+Richte die Spaghetti Carbonara auf Tellern an, <br>
+ bestreue sie nach Belieben mit etwas zusätzlichem Käse und frisch gemahlenem Pfeffer. <br>
+ Serviere das Gericht sofort, solange es schön heiß und cremig ist.
+            </p>
+        </section>
+        <section class="profileSection">
+          <h3>Rezept erstellt von</h3>
+    <div class="profile">
+<img class="profile_pic" src="./img/img_sandro.jpg" width="65px" alt="Profilbild_Alessandro">
+<p>Alessandro Bonomo</p>
+        </section>
+
+
+    </main>
+    <footer>
+      <p>© 2025 Rezeptseite. Alle Rechte vorbehalten.</p>
+      
+    </footer>
+    
+    <script src="penescript.js"></script>
+</body>
+</html>

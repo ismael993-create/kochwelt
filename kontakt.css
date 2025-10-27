@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#themeSwitch {
+    width: 208px;
+    height: 48px;
+    font-size: 24px;
+}
+body {
+    font-size: 24px;
+    color: black;
+}
+body.dark {
+    background-color: rgb(37, 35, 35);
+    color: black;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
+    background-color: rgb(247, 247, 247);
+    
+}
+.logo {
+    height: 80px;
+}
+nav a {
+    padding-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+.menuLink:hover{
+    color: lightgreen;
+    transition: 150ms;
+    transform: 1 2 ;
+}
+.currentMenuLink {
+    color: green;
+    text-decoration: underline;
+}
+.currentMenuLink:hover {
+    color: lightgreen;
+    transition: 150ms;
+    transform: 1 2 ;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+#kontaktFeld {
+    background-color: gainsboro;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 75px;
+    margin-top: 30dvh;
+    align-items: center;
+    border-radius: 3%;
+    margin-bottom: 30dvh;
+}
+h3 {
+    padding-bottom: 24px;
+    text-align: center;
+}
+p {
+    text-align: left;
+    width: 90%;
+}
+input {
+    padding-right: 15px;
+    width: 90%;
+    
+}
+.deinName {
+    padding-bottom: 5px;
+        border-radius: 5px;
+}
+.deineEmail {
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+.deineNachricht {
+    padding-bottom: 50%;
+    display: flex;
+    border-radius: 5px;
+    
+}
+.abschicken {
+    padding: 8px;
+    margin-top: 50px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 14px;
+    margin: 0 -8px -8px -8px;
+    padding-top: 60px;
+    
+}
+
+footer p {
+    padding-left: 40%;
+}
