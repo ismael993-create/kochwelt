@@ -1,12 +1,17 @@
-const form = document.getElementById("kontaktFeld");
-form.addEventListener('submit', function(event){
-    event.preventDefault();// verhindert neuladen der Seite
-    const name = document.getElementById('deinName').value;
-    const eMail = document.getElementById('deineEmail').value;
-    const nachricht = document.getElementById('deineNachricht').value;
-    console.log('Kontaktfeld:');
-    console.log('Name:', name);
-    console.log('E-Mail:', eMail);
-    console.log('Nachricht:', nachricht);
 
-});
+
+function sendMail(event) {
+    event.preventDefault();
+    const data = new FormData(event.target);
+    fetch("https://formspree.io/f/mvgvzqgn", {
+        method: "POST",
+        body: new FormData(event.target),
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(() => {
+        alert('Mail wurde gesendet!')
+    }).catch((error) => {
+        console.log(error);
+    });
+}

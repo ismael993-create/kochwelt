@@ -20,17 +20,20 @@
         </nav>
     </header>
     <main>
-        <form id="kontaktFeld">
-            <h3>Kontaktiere uns:</h3>
-            <p>Dein Name:</p>
-            <input type="text" required class="deinName" id="deinName">
-
-            <p>Deine Email</p>
-            <input type="text" required class="deineEmail" id="deineEmail"> 
-
-            <p>Deine Nachricht:</p>
-            <input type="text" required class="deineNachricht" id="deineNachricht">
-            <button type="submit" class="abschicken">Abschicken</button>
+        <form id="kontaktFeld" onsubmit="sendMail(event)">
+            <label>Dein Name
+            <input class="deinName" type="text">
+            </label>
+            <label>
+                    Deine E-Mail:
+                    <input class="deineEmail" type="email" name="email">
+            </label>
+            <label >
+                Deine Nachricht:
+                <textarea rows="20" cols="60" class="deineNachricht" name="message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button class="abschicken" type="submit">Abschicken</button>
         </form>
     </main>
 

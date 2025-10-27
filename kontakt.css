@@ -69,11 +69,14 @@ h3 {
 }
 p {
     text-align: left;
-    width: 90%;
+    
+}
+label {
+    margin-left: 12px;
 }
 input {
-    padding-right: 15px;
-    width: 90%;
+    width: 400px;
+    padding-bottom: 5px;
     
 }
 .deinName {
@@ -85,10 +88,8 @@ input {
     border-radius: 5px;
 }
 .deineNachricht {
-    padding-bottom: 50%;
-    display: flex;
-    border-radius: 5px;
-    
+   border-radius: 5px;
+   padding-bottom: 5px;
 }
 .abschicken {
     padding: 8px;
