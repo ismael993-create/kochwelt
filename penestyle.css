@@ -370,7 +370,11 @@ footer {
         display: none;
     }
 }
-
+.btn_menu2 {
+        right: -6px;
+        top: -26px;
+        width: 136px;
+    }
 
 
 
@@ -455,6 +459,11 @@ ease;
 }
 
 
+.btn_menu2 {
+        right: -6px;
+        top: -26px;
+        width: 136px;
+    }
 header {
     display: flex
 ;
