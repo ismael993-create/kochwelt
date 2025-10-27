@@ -121,12 +121,34 @@ button {
     padding-top: 24px;
 }
 
-.rezeptImg {
-    display: flex;
-    max-width: 700px;
-    border-radius: 4%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+.image-container {
+    width: calc(100% - 120px);
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    margin-top: 24px;
 }
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 12px;
+    border-radius: 8px;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
 .calculate {
     display: flex;
     padding-left: 120PX;
@@ -137,17 +159,15 @@ button {
 }
 #zutatenListe {
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: grid;
     gap: 5px;
 
 }
-#zutatenListe {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
 
-    margin-left: 120px;
-    margin-right: 120px;
+
+#zutatenListe li {
     background: #eeeeef;
     border-radius: 12px;
     padding: 3px 20px;
@@ -155,9 +175,23 @@ button {
     font-size: 16px;
     line-height: 1.4;
     min-height: 44px;
-    
+    display: flex;
+    align-items: center;
 }
 
+
+#zutatenListe li .menge {
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+#zutatenListe li:hover {
+    background: #b8b8bb;
+}
+li {
+    margin-left: 125px;
+    margin-right: 125px;
+}
 
 
 
