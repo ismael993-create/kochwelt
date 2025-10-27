@@ -24,6 +24,7 @@ function toggleTheme() {
 themeSwitch.addEventListener('click', toggleTheme);
 
 
+<<<<<<< HEAD
 
 
 
@@ -59,3 +60,4 @@ changerBtn.addEventListener('click', () => {
 });
 
 //bandnudel-rezept.html Code
+
