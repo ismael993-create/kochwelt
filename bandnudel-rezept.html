@@ -12,15 +12,28 @@
 
 <body>
     <section class="aot">
-        <header class="header">
+        <header>
             <button id="themeSwitch">🌙 Dunkel</button>
-            <img class="logo" src="./img/logo.png" alt="Kochwelt-Logo">
-            <nav class="menu">
-                <a href="./index.html" class="currentMenuLink">Start</a>
-                <a href="./rezepte.html" class="menuLink">Rezept des Tages</a>
-                <a href="./kontakt.html" class="menuLink">Kontakt</a>
-                <a href="./impressum.html" class="menuLink">Impressum</a>
+            <a href="index.html"> <img class="logo" src="./img/logo.png" alt="Logo" /></a>
+            <nav class="normal_links">
+                <a href="index.html">Start</a>
+                <a href="rezepte.html">Rezept des Tages</a>
+                <a href="Kontakt.html">Kontakt</a>
+                <a href="Impressum.html">Impressum</a>
             </nav>
+
+            <button class="btn_menu " id="menuToggle" type="button">info</button>
+
+            <div id="resp_menu" class="resp_menu_box closed_menu" aria-hidden="true">
+                <button class="btn_menu btn_menu2" id="menuClose" type="button">close menu</button>
+                <nav class="navlinks">
+                    <a href="index.html">Start</a>
+                    <a href="rezepte.html">Rezept des Tages</a>
+                    <a href="Kontakt.html">Kontakt</a>
+                    <a href="Impressum.html">Impressum</a>
+                </nav>
+            </div>
+            </div>
         </header>
 
 
