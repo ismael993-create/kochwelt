@@ -1,10 +1,6 @@
 * {
-    margin: 0;
     padding: 0;
-}
-* {
-    padding: 0;
-    margin: 0;
+    margin: 3px;
 }
 #themeSwitch {
     width: 208px;
@@ -399,20 +395,17 @@ h1 {
 /*bandnudel-rezept.html Seite*/
 
 footer {
-    background-color: #333;
+       background-color: #333;
     height: 100px;
-    display: flex;
-    justify-content: space-around;
+    display: flex
+;
+    justify-content: center;
     align-items: center;
-
     font-family: "Raleway", sans-serif;
     color: white;
     font-size: 14px;
     margin: 0 -8px -8px -8px;
     padding-top: 60px;
-    
+
 }
 
-footer p {
-    padding-left: 50%;
-}

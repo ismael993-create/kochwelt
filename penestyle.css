@@ -180,12 +180,7 @@ h1 {
 
 }
 
-.calculate {
-    display: flex;
-    margin: 0px;
-    margin-left: 120px;
 
-}
 
 li {
     margin-left: 25px;
@@ -197,13 +192,8 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
-.inputspace {
-    padding-right: 10px;
-}
 
-.input_size {
-    width: 80px;
-}
+
 
 button {
     padding: 10px 20px;
@@ -249,9 +239,109 @@ button {
 
 p {
     padding-right: 20px;
+    font-weight: 800;
+}
+
+.position_zutaten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portionChanger {
+    display: flex
+;
+    justify-content: flex-start;
+    align-items: center;
+    /* gap: 25px; */
+    margin-top: 60px;
+    width: 65%;
+    padding-left: 0;
+    box-sizing: border-box;
 }
 
 
+.portionChanger input {
+    /* Input füllt den freien Platz */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+
+}
+
+.inputFeld input:focus {
+    border-color: #f9c907;
+    /* Akzentfarbe beim Fokus */
+    box-shadow: 0 0 5px rgba(255, 123, 0, 0.3);
+}
+
+
+
+.changerBtn {
+    padding: 10px 30px;
+    background-color: #55ea05;
+    /* orangener Button */
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.inputFeld button:hover {
+    background-color: #f9c907;
+    /* dunkler beim Hover */
+}
+
+
+
+
+
+
+.zutatenFeld {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    
+}
+
+.zutatenFeld h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.zutatenBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+
+}
+
+.zutatenBox.grau {
+    background-color: #f0f0f0;
+}
+
+.zutatenBox.weiss {
+    background-color: #ffffff;
+}
+
+.zutatenBox .menge {
+    font-weight: bold;
+    width: 60px;
+    text-align: right;
+}
+
+.zutatenBox .zutatName {
+    font-size: 16px;
+}
 
 
 
@@ -265,39 +355,6 @@ p {
 }
 
 
-#zutatenListe li {
-    background: #eeeeef;
-    border-radius: 12px;
-    padding: 3px 20px;
-    color: #383737;
-    font-size: 16px;
-    line-height: 1.4;
-    min-height: 44px;
-    display: flex;
-    align-items: center;
-}
-
-
-#zutatenListe li .menge {
-    font-weight: 600;
-    margin-right: 6px;
-}
-
-#zutatenListe li:hover {
-    background: #b8b8bb;
-}
-
-
-.calculate {
-    display: flex;
-
-    align-items: center;
-    margin: 16px 0 20px;
-}
-
-.inputspace {
-    font-weight: 600;
-}
 
 .icon_2 {
     display: flex;

@@ -69,30 +69,61 @@
       </button>
     </div>
 
-    <div class="calculate">
-      <label class="inputspace" for="personen">Zutaten für: </label>
-      <input onclick="moreItems()" class="input_size" id="personen" type="number" min="1" value="2"  width="80px"/>
-      <input class="submitbtn" type="button" value="Portionen" id="rechnenBtn" />
-    </div>
-
-    <ul id="zutatenListe">
-    
-      <li data_pro_menge="83.33" data-einheit="g"> <p>Lachsfilet / Lachsfilets (TK aufgetaut): </p> <span class="menge">83.33</span> g</li>
-      <li data_pro_menge="1" data-einheit="EL"><p>Olivenöl: </p><span class="menge">1</span> EL</li>
-      <li data_pro_menge="0.17"><p>Zwiebel / Zwiebeln: </p><span class="menge">0.17</span></li>
-      <li data_pro_menge="0.17"><p>Zucchini: </p><span class="menge">0.17</span></li>
-      <li data_pro_menge="83.33" data-einheit="g"><p>Bandnudeln: </p><span class="menge">83.33</span> g</li>
-      <li data_pro_menge="25" data-einheit="g"><p>Frischkäse: </p><span class="menge">25</span> g</li>
-      <li data_pro_menge="8.33" data-einheit="g"><p>Sahne: </p><span class="menge">8.33</span> g</li>
-      <li data_pro_menge="0.17"><p>Zitrone (Abrieb): </p><span class="menge">0.17</span></li>
-      <li data_pro_menge="0.17" data-einheit="TL"><p>Salz: </p><span class="menge">0.17</span> TL</li>
-      <li data_pro_menge="0.08" data-einheit="TL"><p>Pfeffer:</p> <span class="menge">0.08</span> TL</li>
-      <li data_pro_menge="0.17" data-einheit="TL"><p>Chili: </p><span class="menge">0.17</span> TL</li>
-      <li data_pro_menge="16.67" data-einheit="g"><p>Cocktailtomaten: </p><span class="menge">16.67</span> g</li>
-      <li data_pro_menge="1"><p>Basilikumblätter: </p><span class="menge">1</span></li>
-    </ul>
-    <div>
+  
      
+<div class="position_zutaten">
+ <div class="portionChanger">
+                <p>Zutaten für :</p>
+                <input type="text" placeholder="4" class="inputChanger" />
+                <button class="changerBtn">Portion</button>
+            </div>
+
+            
+            <div class="zutatenOutput"></div>
+
+     <div class="zutatenFeld">
+    <div class="zutatenBox grau" data-menge="83.33" data-einheit="g">
+        <span class="menge">83.33 g</span> <span class="zutatName">Lachsfilet / Lachsfilets (TK aufgetaut)</span>
+    </div>
+    <div class="zutatenBox weiss" data-menge="1" data-einheit="EL">
+        <span class="menge">1 EL</span> <span class="zutatName">Olivenöl</span>
+    </div>
+    <div class="zutatenBox grau" data-menge="0.17" data-einheit="">
+        <span class="menge">0.17</span> <span class="zutatName">Zwiebel / Zwiebeln</span>
+    </div>
+    <div class="zutatenBox weiss" data-menge="0.17" data-einheit="">
+        <span class="menge">0.17</span> <span class="zutatName">Zucchini</span>
+    </div>
+    <div class="zutatenBox grau" data-menge="83.33" data-einheit="g">
+        <span class="menge">83.33 g</span> <span class="zutatName">Bandnudeln</span>
+    </div>
+    <div class="zutatenBox weiss" data-menge="25" data-einheit="g">
+        <span class="menge">25 g</span> <span class="zutatName">Frischkäse</span>
+    </div>
+    <div class="zutatenBox grau" data-menge="8.33" data-einheit="g">
+        <span class="menge">8.33 g</span> <span class="zutatName">Sahne</span>
+    </div>
+    <div class="zutatenBox weiss" data-menge="0.17" data-einheit="">
+        <span class="menge">0.17</span> <span class="zutatName">Zitrone (Abrieb)</span>
+    </div>
+    <div class="zutatenBox grau" data-menge="0.17" data-einheit="TL">
+        <span class="menge">0.17 TL</span> <span class="zutatName">Salz</span>
+    </div>
+    <div class="zutatenBox weiss" data-menge="0.08" data-einheit="TL">
+        <span class="menge">0.08 TL</span> <span class="zutatName">Pfeffer</span>
+    </div>
+    <div class="zutatenBox grau" data-menge="0.17" data-einheit="TL">
+        <span class="menge">0.17 TL</span> <span class="zutatName">Chili</span>
+    </div>
+    <div class="zutatenBox weiss" data-menge="16.67" data-einheit="g">
+        <span class="menge">16.67 g</span> <span class="zutatName">Cocktailtomaten</span>
+    </div>
+    <div class="zutatenBox grau" data-menge="1" data-einheit="">
+        <span class="menge">1</span> <span class="zutatName">Basilikumblätter</span>
+    </div>
+</div>
+</div>
+      
       <h2>Zubereitung:</h2>
       <div class="icon_2">
       <button class="icon_txt" >
