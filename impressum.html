@@ -6,18 +6,19 @@
 
     <title>Penne al Salmone</title>
     <link rel="icon" type="image/png" href="./img/logo_small.png" />
-    <link rel="stylesheet" href="./impressumstyle.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-  <script src="./impressumscript.js" defer></script>
+  <script src="./script.js" defer></script>
       
   </head>
 
-  <body>
+
      <div class="content">
 <header>
-  <img class="logo" src="./img/logo.png" alt="Logo" />
+  <button id="themeSwitch">🌙 Dunkel</button>
+ <a href="index.html"> <img class="logo" src="./img/logo.png" alt="Logo" /></a>
  <nav class="normal_links">
       <a href="index.html">Start</a>
       <a href="rezepte.html">Rezept des Tages</a>
@@ -25,10 +26,10 @@
       <a href="Impressum.html">Impressum</a>
     </nav>
 
-  <button class="btn_menu" id="menuToggle" type="button">info</button>
+  <button class="btn_menu " id="menuToggle" type="button">info</button>
 
   <div id="resp_menu" class="resp_menu_box closed_menu" aria-hidden="true">
-    <button class="btn_menu" id="menuClose" type="button">close menu</button>
+    <button class="btn_menu btn_menu2" id="menuClose" type="button">close menu</button>
     <nav class="navlinks">
       <a href="index.html">Start</a>
       <a href="rezepte.html">Rezept des Tages</a>
@@ -40,7 +41,8 @@
 </header>
     <main class="impr_txt">
         <div class="kontaktFeld">
-<h1>Impressum</h1>
+            <body>
+<h1 class="impressumh1">Impressum</h1>
 <ol class="impressumListe">
 
 <p>

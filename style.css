@@ -275,7 +275,42 @@ h1 {
     box-sizing: border-box;
 
 }
+.impr_txt {
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.kontaktFeld {
+    background-color: gainsboro;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+    align-items: center;
+    border-radius: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.impressumListe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+
+.impressumh1 {    margin-left: 0px;
+    margin-bottom: 50px;}
 
 .portionChanger input {
     /* Input füllt den freien Platz */
@@ -919,6 +954,13 @@ footer {
         box-sizing: border-box;
     }
 
+    .impressumh1 {    margin-left: 0px;
+    margin-bottom: 50px;
+font-size: 32px;}
+.impressumListe{
+    font-size: 15px;
+    align-items: baseline;
+}
 
 
 
