@@ -1307,3 +1307,16 @@ footer {
     }
 
 }
+
+
+
+
+
+
+
+
+.datenschutz{
+    display: flex;
+    flex-direction: column;
+    
+}
