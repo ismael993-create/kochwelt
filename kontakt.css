@@ -1,25 +1,31 @@
+
 * {
     padding: 0;
-    margin: 0;
+    margin: 0px;
 }
+
 #themeSwitch {
     width: 208px;
     height: 48px;
     font-size: 24px;
 }
+
 body {
+    min-height: 100dvh;
     font-size: 18px;
     color: black;
 }
+
 body.dark {
     font-size: 18px;
-   
+
     background-color: rgb(37, 35, 35);
-    color: black !important;
-   header {
-       background-color: white !important;
-       margin: -8px;
-   }
+    color: white !important;
+
+    header {
+        background-color: white !important;
+        margin: -8px;
+    }
 
 
 }
@@ -111,6 +117,9 @@ a:hover {
 main {
     display: flex;
     justify-content: center;
+}
+form {
+    color: black;
 }
 #kontaktFeld {
     background-color: gainsboro;

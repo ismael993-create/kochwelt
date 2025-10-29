@@ -1036,7 +1036,12 @@ p {
 
 }
 
-
+.bescheibung {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .icon_2 {
     display: flex;
