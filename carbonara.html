@@ -1,31 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rezept-Spaghetti Carbonara</title>
+
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Spaghetti Carbonara</title>
     <link rel="icon" type="image/png" href="./img/logo_small.png" />
-    <link rel="stylesheet" href="carbonaraStyle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-      <div class="content">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <script src="./penescript.js" defer></script>
+      
+  </head>
+
+  
+     <div class="content">
 <header>
   <button id="themeSwitch">🌙 Dunkel</button>
-  <a href="index.html"> <img class="logo" src="./img/logo.png" alt="Logo" /></a>
+ <a href="index.html"> <img class="logo" src="./img/logo.png" alt="Logo" /></a>
  <nav class="normal_links">
       <a href="index.html">Start</a>
-      <a href="rezepte.html">Rezepte</a>
+      <a href="rezepte.html">Rezept des Tages</a>
       <a href="Kontakt.html">Kontakt</a>
       <a href="Impressum.html">Impressum</a>
     </nav>
 
-  <button class="btn_menu" id="menuToggle" type="button">info</button>
+  <button class="btn_menu " id="menuToggle" type="button">info</button>
 
   <div id="resp_menu" class="resp_menu_box closed_menu" aria-hidden="true">
-    <button class="btn_menu" id="menuClose" type="button">close menu</button>
+    <button class="btn_menu btn_menu2" id="menuClose" type="button">close menu</button>
     <nav class="navlinks">
       <a href="index.html">Start</a>
       <a href="rezepte.html">Rezept des Tages</a>
@@ -35,13 +39,15 @@
   </div>
   </div>
 </header>
-    
-    <main>
-        <section class="gerichtHeader">
-          <div class="image-container">
-              <h1>Spaghetti Carbonara</h1>
-              <img src="./img/spaghettiCarbonara.jpg" alt="Bild Spaghetti Carbonara">
-          </div>
+  <body>
+   
+
+    <h1>Spaghetti Carbonara</h1>
+
+    <div class="image-container">
+      <img src="./img/spaghettiCarbonara.jpg" alt="Carbonara Image" />
+    </div>
+
     <div class="img_btn">
       <button class="btn1" aria-label="cooktime">
         <div class="icon_txt">
@@ -62,41 +68,54 @@
         </div>
       </button>
     </div>
-        </section>
-        <section class="zutaten">
-          <div class="calculate">
-          <label class="inputspace" for="personen">Zutaten für: </label>
-          <input onclick="moreItems()" class="input_size" id="personen" type="number" min="1" value="2"  width="80px"/>
-          <input class="submitbtn" type="button" value="Portionen" id="rechnenBtn" />
-        </div>
-        <ul id="zutatenListe">
-    
-          <li data_pro_menge="100" data-einheit="g"> <p>Spaghetti:</p> <span class="menge">100</span> g</li>
-          <li data_pro_menge="1" data-einheit="Stck"><p>Eier: </p><span class="menge">1</span> Stck</li>
-          <li data_pro_menge="50" data-einheit="g"><p>durchwachsener Speck</p><span class="menge">50</span> g</li>
-          <li data_pro_menge="25" data-einheit="g"><p>geriebener Parmesan: </p><span class="menge">25</span> g</li>
-          <li data_pro_menge="0.5" data-einheit="priese"><p>Salz: </p><span class="menge">0.5</span> priese</li>
-          <li data_pro_menge="0.5" data-einheit="priese"><p>Schwarzer Pfeffer:</p> <span class="menge">0.5</span> priese</li>
-          
-        </ul>
-    <div>
-        </section>
-        <section class="zubereitung">
+
+  
+     
+<div class="position_zutaten">
+ <div class="portionChanger">
+                <p>Zutaten für :</p>
+                <input type="text" placeholder="4" class="inputChanger" />
+                <button class="changerBtn">Portionen</button>
+            </div>
+
             
-            
-              <h2>Zubereitung</h2>
-              <div class="icon_2">
-                <button class="icon_txt" >
-                    <img class="icon_img" src="./img/icons/clock-regular.svg" alt="utensils" /> c.a 30min
-                </button>
-                <button class="icon_txt">
-                    <img class="icon_img" src="./img/icons/clock-regular.svg" alt="utensils" /> Gesamtzeit c.a 45min
-                </button>
-            </div>  
-            <p>
-<br>
-<br>
-1. Spaghetti kochen: <br>
+            <div class="zutatenOutput"></div>
+
+     <div class="zutatenFeld">
+    <div class="zutatenBox grau" data-menge="400" data-einheit="g">
+        <span class="menge">400 g</span> <span class="zutatName">Spaghetti</span>
+    </div>
+    <div class="zutatenBox weiss" data-menge="4" data-einheit="Stück">
+        <span class="menge">4 Stück</span> <span class="zutatName">Eier</span>
+    </div>
+    <div class="zutatenBox grau" data-menge="100" data-einheit="g">
+        <span class="menge">100 g</span> <span class="zutatName">Parmesan</span>
+    </div>
+    <div class="zutatenBox weiss" data-menge="100" data-einheit="g">
+        <span class="menge">100 g</span> <span class="zutatName">durchwachsener Speck</span>
+    </div>
+    <div class="zutatenBox grau" data-menge="1" data-einheit="priese">
+        <span class="menge">1 priese</span> <span class="zutatName">Salz</span>
+    </div>
+    <div class="zutatenBox weiss" data-menge="1" data-einheit="priese">
+        <span class="menge">1 priese</span> <span class="zutatName">Schwarzer Pfeffer</span>
+    </div>
+</div>
+</div>
+      
+      <h2>Zubereitung:</h2>
+      <div class="icon_2">
+      <button class="icon_txt" >
+        <img class="icon_img" src="./img/icons/clock-regular.svg" alt="utensils" /> c.a 30min
+      </button>
+       <button class="icon_txt">
+        <img class="icon_img" src="./img/icons/clock-regular.svg" alt="utensils" /> Gesamtzeit c.a 45min
+      </button>
+      </div>
+      
+      
+     <span>
+        1. Spaghetti kochen: <br>
 Bringe einen großen Topf mit leicht gesalzenem Wasser zum Kochen. <br>
  Gib die Spaghetti hinein und koche sie nach Packungsanweisung al dente. <br>
   Während die Nudeln kochen, kannst du bereits mit der Soße beginnen. <br>
@@ -129,23 +148,22 @@ Gieße nun die Ei-Käse-Mischung über die warmen Spaghetti und rühre kräftig 
 Richte die Spaghetti Carbonara auf Tellern an, <br>
  bestreue sie nach Belieben mit etwas zusätzlichem Käse und frisch gemahlenem Pfeffer. <br>
  Serviere das Gericht sofort, solange es schön heiß und cremig ist.
-            </p>
-        </section>
-        <section class="profileSection">
-          <h3>Rezept erstellt von</h3>
+     </span>
+    <h3>Rezept erstellt von</h3>
     <div class="profile">
 <img class="profile_pic" src="./img/img_sandro.jpg" width="65px" alt="Profilbild_Alessandro">
 <p>Alessandro Bonomo</p>
-        </section>
-
-
-    </main>
+    </div>
     <footer>
+
+
       <p>© 2025 Rezeptseite. Alle Rechte vorbehalten.</p>
       <a href="datenschutz.html">Datenschutz</a>
       
     </footer>
-    
-    <script src="penescript.js"></script>
-</body>
+
+
+
+  </body>
+ 
 </html>
