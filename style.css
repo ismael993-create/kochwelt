@@ -82,10 +82,8 @@ header {
 .navlinks {
 
     font-family: "Raleway", sans-serif;
-
     gap: 10px;
     margin-right: 120px;
-
     padding-left: 40px;
     text-align: center;
     display: flex;
@@ -99,14 +97,10 @@ a {
     text-decoration: none;
     color: black;
     font-weight: 700;
-
-
 }
 
 a:hover {
     color: #3caf22;
-
-
     text-underline-offset: 15px;
     text-decoration-thickness: 3px;
     font-size: 16px;
@@ -159,6 +153,8 @@ h1 {
     transform: scale(1.05);
 }
 
+
+/*Responsive index.html seite*/
 @media (min-width: 320px) and (max-width: 767px) {
     header {
         flex-direction: column;
@@ -267,38 +263,28 @@ h1 {
     }
 }
 
+/*Responsive index.html seite*/
 
 
 
 
 
-
-
-/*rezept.html Seite*/
+/*Responsive rezept.html Seite*/
 
 .rezept-card {
     display: flex;
     align-items: flex-start;
-    /* Bild und Text oben ausrichten */
     gap: 20px;
-    /* Abstand zwischen Bild und Text */
-
     align-items: flex-start;
-    /* Bild und Text oben ausrichten */
     gap: 20px;
-    /* Abstand zwischen Bild und Text */
-
-    /* max-width: 400px; */
     margin: 120px auto;
     padding: 15px;
     border: 1px solid #ddd;
-
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .rezept-card img.gericht-bild {
     width: 400px;
-    /* Bild kleiner machen */
     height: auto;
     border-radius: 12px;
 }
@@ -322,6 +308,131 @@ h1 {
     background-color: #1f5c1f;
 }
 
+/* Responsive rezept.html Seite*/
+
+
+
+/*Responsive rezepte.html*/
+
+/* 📱 Mobile (320px–767px) */
+@media (min-width: 320px) and (max-width: 767px) {
+  .rezept-card {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .rezept-card img.gericht-bild {
+    width: 100%;
+    height: auto;
+  }
+
+  .rezept-info {
+    text-align: center;
+  }
+
+  .rezept-info h2 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .rezept-button {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  footer {
+    font-size: 12px;
+    height: auto;
+    padding: 30px 10px;
+    text-align: center;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    margin: 0;
+    width: 160px;
+  }
+
+  #themeSwitch {
+    width: 90px;
+    height: 32px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .normal_links {
+    display: none;
+  }
+
+  .btn_menu {
+    display: inline-block;
+    font-size: 14px;
+  }
+}
+
+
+/* 💻 Tablets (768px–1280px) */
+@media (min-width: 768px) and (max-width: 1280px) {
+  .rezept-card {
+    flex-direction: row;
+    align-items: center;
+    margin: 60px auto;
+    width: 90%;
+    padding: 15px;
+  }
+
+  .rezept-card img.gericht-bild {
+    width: 50%;
+    height: auto;
+  }
+
+  .rezept-info {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .rezept-info h2 {
+    font-size: 24px;
+  }
+
+  .rezept-button {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 40px 20px;
+  }
+
+  .logo {
+    width: 200px;
+    margin-left: 0;
+  }
+
+  .normal_links {
+    gap: 15px;
+    margin-right: 20px;
+  }
+
+  #themeSwitch {
+    width: 110px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+/*Responsive rezepte.html*/
+
+
 
 
 /*bandnudel-rezept.html */
@@ -339,7 +450,7 @@ h1 {
 
 
 
-/* statt .rezept-container img */
+/* start .rezept-container img */
 .rezept-container .hero {
     width: 1000px;
     height: 300px;
@@ -534,7 +645,6 @@ h1 {
     width: 100%;
     padding-left: 0;
     box-sizing: border-box;
-
 }
 
 .profile {
@@ -569,7 +679,6 @@ footer {
     font-size: 14px;
     margin: 0 -8px -8px -8px;
     padding-top: 60px;
-
 }
 
 body {
@@ -692,14 +801,10 @@ a {
     text-decoration: none;
     color: black;
     font-weight: 700;
-
-
 }
 
 a:hover {
     color: #3caf22;
-
-
     text-underline-offset: 15px;
     text-decoration-thickness: 3px;
     font-size: 16px;
