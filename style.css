@@ -122,6 +122,9 @@ a:hover {
     margin: 20px 0;
 
 }
+main {
+    height: 80dvh;
+}
 
 h1 {
     padding-top: 32px;
@@ -349,6 +352,7 @@ h1 {
     height: auto;
     padding: 30px 10px;
     text-align: center;
+    
   }
 
   header {
@@ -1009,10 +1013,12 @@ p {
 
 .zutatenBox.grau {
     background-color: #f0f0f0;
+    color: black;
 }
 
 .zutatenBox.weiss {
     background-color: #ffffff;
+    color: black;
 }
 
 .zutatenBox .menge {
@@ -1036,11 +1042,9 @@ p {
 
 }
 
-.bescheibung {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.beschreibung {
+    margin-top: 30px;
+    margin-left: 120px;
 }
 
 .icon_2 {
@@ -1059,6 +1063,7 @@ p {
 }
 
 h3 {
+    margin-top: 50px;
     margin-bottom: 30px;
 
 }

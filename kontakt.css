@@ -16,19 +16,7 @@ body {
     color: black;
 }
 
-body.dark {
-    font-size: 18px;
 
-    background-color: rgb(37, 35, 35);
-    color: white !important;
-
-    header {
-        background-color: white !important;
-        margin: -8px;
-    }
-
-
-}
 .btn_menu {
     display: none;
 }
@@ -68,9 +56,7 @@ header {
     align-items: baseline;
 }
 
-.logo {
-    height: 80px;
-}
+
 .logo {
     margin-left: 150px;
 }
