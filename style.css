@@ -119,7 +119,8 @@ a:hover {
 
 }
 main {
-    height: 80dvh;
+    min-height: 100dvh; /*nimmt mindestens die komplette Viewport-Höhe*/
+    margin-bottom: 100px; /*Platz für Footer*/
 }
 
 h1 {
@@ -1340,4 +1341,10 @@ footer {
 .datenschutz{
     display: flex;
     flex-direction: column;
+}
+
+
+
+.datenschutzKlasse{
+    color: white;
 }
