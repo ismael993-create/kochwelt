@@ -318,7 +318,7 @@ h1 {
 
 /*Responsive rezepte.html*/
 
-/* 📱 Mobile (320px–767px) */
+/*  Mobile (320px–767px) */
 @media (min-width: 320px) and (max-width: 767px) {
   .rezept-card {
     flex-direction: column;
@@ -385,7 +385,7 @@ h1 {
 }
 
 
-/* 💻 Tablets (768px–1280px) */
+/* Tablets (768px–1280px) */
 @media (min-width: 768px) and (max-width: 1280px) {
   .rezept-card {
     flex-direction: row;
@@ -672,6 +672,226 @@ h1 {
 
 
 /*bandnudel-rezept.html Seite*/
+
+/* responsive bandnudel-rezept.html Seite*/
+
+
+
+/* ==============================
+   📱 Responsive bandnudel-rezept.html
+   ============================== */
+
+/* === Mobile (320px–767px) === */
+@media (min-width: 320px) and (max-width: 767px) {
+  .rezept-container {
+    padding: 20px;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .rezept-container h1 {
+    font-size: 22px;
+    text-align: center;
+    margin: 20px 0;
+    margin-left: 0;
+  }
+
+  .rezept-container .hero {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+  }
+
+  .iconFeld {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .iconBox {
+    width: 90%;
+    justify-content: center;
+  }
+
+  .portionChanger {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .portionChanger input {
+    width: 60%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .changerBtn {
+    width: 60%;
+    font-size: 14px;
+  }
+
+  .zutatenFeld {
+    width: 100%;
+  }
+
+  .zutatenBox {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .iconFeld2 {
+    margin-top: 40px;
+    align-items: center;
+  }
+
+  .iconFeld2 h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: justify;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile_img {
+    width: 70px;
+    height: 70px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+    padding: 30px 10px;
+    height: auto;
+  }
+
+  /* Header Anpassung */
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    margin: 0;
+    width: 160px;
+  }
+
+  #themeSwitch {
+    width: 90px;
+    height: 32px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    position: static;
+  }
+
+  .normal_links {
+    display: none;
+  }
+
+  .btn_menu {
+    display: inline-block;
+    font-size: 14px;
+  }
+}
+
+
+/* === Tablets (768px–1280px) === */
+@media (min-width: 768px) and (max-width: 1280px) {
+  .rezept-container {
+    padding: 30px;
+    align-items: center;
+  }
+
+  .rezept-container h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .rezept-container .hero {
+    width: 90%;
+    height: 250px;
+  }
+
+  .iconFeld {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .iconBox {
+    padding: 8px 16px;
+  }
+
+  .portionChanger {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .portionChanger input {
+    width: 25%;
+  }
+
+  .changerBtn {
+    font-size: 15px;
+  }
+
+  .zutatenFeld {
+    width: 90%;
+  }
+
+  p {
+    width: 90%;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .profile {
+    justify-content: center;
+  }
+
+  .profile_img {
+    width: 80px;
+    height: 80px;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 40px 20px;
+  }
+
+  .logo {
+    width: 200px;
+    margin-left: 0;
+  }
+
+  #themeSwitch {
+    width: 110px;
+    height: 40px;
+    font-size: 14px;
+    position: static;
+  }
+
+  .normal_links {
+    gap: 15px;
+    margin-right: 20px;
+  }
+}
+
+
+
+
+
 
 footer {
     background-color: #333;
@@ -1074,19 +1294,7 @@ h3 {
     border-radius: 50%;
 }
 
-footer {
-    background-color: #333;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 
-    font-family: "Raleway", sans-serif;
-    color: white;
-    font-size: 14px;
-    margin: 0 -8px -8px -8px;
-    padding-top: 60px;
-}
 
 
 
@@ -1345,4 +1553,22 @@ footer {
 
 .datenschutzKlasse{
     color: white;
+}
+
+
+
+
+
+footer {
+    background-color: #333;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 14px;
+    margin: 0 -8px -8px -8px;
+    padding-top: 60px;
 }
