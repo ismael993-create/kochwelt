@@ -1339,3 +1339,9 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
+
+
+.datenschutzKlasse{
+    color: white;
+}
