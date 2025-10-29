@@ -1,0 +1,170 @@
+
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Spaghetti Carbonara</title>
+    <link rel="icon" type="image/png" href="./img/logo_small.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <script src="./penescript.js" defer></script>
+      
+  </head>
+
+  
+     <div class="content">
+<header>
+  <button id="themeSwitch">🌙 Dunkel</button>
+ <a href="index.html"> <img class="logo" src="./img/logo.png" alt="Logo" /></a>
+ <nav class="normal_links">
+      <a href="index.html">Start</a>
+      <a href="rezepte.html">Rezept des Tages</a>
+      <a href="Kontakt.html">Kontakt</a>
+      <a href="Impressum.html">Impressum</a>
+    </nav>
+
+  <button class="btn_menu " id="menuToggle" type="button">info</button>
+
+  <div id="resp_menu" class="resp_menu_box closed_menu" aria-hidden="true">
+    <button class="btn_menu btn_menu2" id="menuClose" type="button">close menu</button>
+    <nav class="navlinks">
+      <a href="index.html">Start</a>
+      <a href="rezepte.html">Rezept des Tages</a>
+      <a href="Kontakt.html">Kontakt</a>
+      <a href="Impressum.html">Impressum</a>
+    </nav>
+  </div>
+  </div>
+</header>
+  <body>
+   
+
+    <h1>Spaghetti Carbonara</h1>
+
+    <div class="image-container">
+      <img src="./img/spaghettiCarbonara.jpg" alt="Carbonara Image" />
+    </div>
+
+    <div class="img_btn">
+      <button class="btn1" aria-label="cooktime">
+        <div class="icon_txt">
+          <img class="icon_img" src="./img/icons/clock-regular.svg" alt="cooktime" />
+          30 Min
+        </div>
+      </button>
+      <button aria-label="difficulty">
+        <div class="icon_txt">
+          <img class="icon_img" src="./img/icons/brain-solid.svg" alt="difficult" />
+          medium
+        </div>
+      </button>
+      <button aria-label="date">
+        <div class="icon_txt">
+          <img class="icon_img" src="./img/icons/calendar-alt-regular.svg" alt="calendar" />
+          23.10.2025
+        </div>
+      </button>
+    </div>
+
+  
+     
+<div class="position_zutaten">
+    <div class="portionChanger">
+                    <p>Zutaten für :</p>
+                    <input type="text" placeholder="4" class="inputChanger" />
+                    <button class="changerBtn">Portionen</button>
+                </div>
+
+                
+                <div class="zutatenOutput"></div>
+
+        <div class="zutatenFeld">
+        <div class="zutatenBox grau" data-menge="400" data-einheit="g">
+            <span class="menge">400 g</span> <span class="zutatName">Spaghetti</span>
+        </div>
+        <div class="zutatenBox weiss" data-menge="4" data-einheit="Stück">
+            <span class="menge">4 Stück</span> <span class="zutatName">Eier</span>
+        </div>
+        <div class="zutatenBox grau" data-menge="100" data-einheit="g">
+            <span class="menge">100 g</span> <span class="zutatName">Parmesan</span>
+        </div>
+        <div class="zutatenBox weiss" data-menge="100" data-einheit="g">
+            <span class="menge">100 g</span> <span class="zutatName">durchwachsener Speck</span>
+        </div>
+        <div class="zutatenBox grau" data-menge="1" data-einheit="priese">
+            <span class="menge">1 priese</span> <span class="zutatName">Salz</span>
+        </div>
+        <div class="zutatenBox weiss" data-menge="1" data-einheit="priese">
+            <span class="menge">1 priese</span> <span class="zutatName">Schwarzer Pfeffer</span>
+        </div>
+    </div>
+</div>
+      <div class="beschreibung">
+        <h2>Zubereitung:</h2>
+        <div class="icon_2">
+        <button class="icon_txt" >
+            <img class="icon_img" src="./img/icons/clock-regular.svg" alt="utensils" /> c.a 30min
+        </button>
+        <button class="icon_txt">
+            <img class="icon_img" src="./img/icons/clock-regular.svg" alt="utensils" /> Gesamtzeit c.a 45min
+        </button>
+        </div>
+      
+      
+     <p>
+        1. Spaghetti kochen: <br>
+Bringe einen großen Topf mit leicht gesalzenem Wasser zum Kochen. <br>
+ Gib die Spaghetti hinein und koche sie nach Packungsanweisung al dente. <br>
+  Während die Nudeln kochen, kannst du bereits mit der Soße beginnen. <br>
+<br>
+2. Speck anbraten: <br>
+Schneide den Pancetta oder Speck in kleine Würfel oder feine Streifen. <br>
+Erhitze eine Pfanne auf mittlerer Stufe und gib den Speck hinein. <br>
+ Brate ihn ohne zusätzliches Fett, bis er schön knusprig ist und etwas Fett austritt. <br>
+Wenn du möchtest, kannst du ein paar Tropfen Olivenöl hinzufügen. <br>
+<br>
+3. Eier und Käse verrühren: <br>
+In einer Schüssel verquirlst du die Eier mit dem geriebenen Parmesan oder Pecorino. <br>
+Würze die Mischung mit frisch gemahlenem schwarzen Pfeffer. <br>
+ Salz ist meist nicht nötig, da Speck und Käse bereits salzig sind. <br>
+<br>
+4. Spaghetti und Speck verbinden: <br>
+Wenn die Spaghetti fertig sind, <br>
+ schöpfe eine kleine Tasse vom Kochwasser ab und gieße die Nudeln ab. <br>
+ Gib die heißen Spaghetti sofort in die Pfanne mit dem Speck und vermische alles gut, <br>
+ sodass die Nudeln das Aroma aufnehmen. <br>
+  Nimm die Pfanne anschließend vom Herd, damit die Eier später nicht stocken. <br>
+<br>
+5. Soße anrühren: <br>
+Gieße nun die Ei-Käse-Mischung über die warmen Spaghetti und rühre kräftig um, <br>
+ bis die Soße cremig wird. <br>
+ Falls sie zu dick erscheint, gib etwas vom heißen Nudelwasser hinzu. <br>
+  Die Wärme der Nudeln reicht aus, um die Eier sanft zu binden, ohne dass sie zu Rührei werden. <br>
+<br>
+6. Servieren: <br>
+Richte die Spaghetti Carbonara auf Tellern an, <br>
+ bestreue sie nach Belieben mit etwas zusätzlichem Käse und frisch gemahlenem Pfeffer. <br>
+ Serviere das Gericht sofort, solange es schön heiß und cremig ist.
+        </p>
+        <h3>Rezept erstellt von</h3>
+        <div class="profile">
+    <img class="profile_pic" src="./img/img_sandro.jpg" width="65px" alt="Profilbild_Alessandro">
+    <p>Alessandro Bonomo</p>
+        </div>
+</div>
+    <footer>
+
+
+      <p>© 2025 Rezeptseite. Alle Rechte vorbehalten.</p>
+      <a href="datenschutz.html">Datenschutz</a>
+      
+    </footer>
+
+
+
+  </body>
+ 
+</html>

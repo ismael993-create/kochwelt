@@ -1,0 +1,1341 @@
+* {
+    padding: 0;
+    margin: 0px;
+}
+
+#themeSwitch {
+    width: 208px;
+    height: 48px;
+    font-size: 24px;
+}
+
+body {
+    min-height: 100dvh;
+    font-size: 18px;
+    color: black;
+}
+
+body.dark {
+    font-size: 18px;
+
+    background-color: rgb(37, 35, 35);
+    color: white !important;
+
+    header {
+        background-color: white !important;
+        margin: -8px;
+    }
+
+
+}
+
+.btn_menu {
+    display: none;
+}
+
+.resp_menu_box {
+    position: fixed;
+    top: 150px;
+    right: 0;
+    width: 175px;
+    height: 225px;
+    background: #b6bec7;
+    border-radius: 0 0 0 8px;
+
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+
+
+.closed_menu {
+    transform: translateX(100%);
+}
+
+.resp_menu_box.is-open {
+    transform: translateX(0);
+}
+
+header {
+
+    box-shadow: 0px 5px 0px 0px rgb(0 0 0 / 4%);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+.logo {
+    margin-left: 150px;
+}
+
+.normal_links {
+    display: flex;
+    gap: 20px;
+    margin-right: 120px;
+}
+
+.navlinks {
+
+    font-family: "Raleway", sans-serif;
+    gap: 10px;
+    margin-right: 120px;
+    padding-left: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #3caf22;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 3px;
+    font-size: 16px;
+
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+
+
+.main h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+
+}
+main {
+    height: 80dvh;
+}
+
+h1 {
+    padding-top: 32px;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 10px;
+    max-width: 1000px;
+    margin: 10px auto;
+
+
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+/*Responsive index.html seite*/
+@media (min-width: 320px) and (max-width: 767px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        margin: 0;
+        width: 160px;
+    }
+
+    #themeSwitch {
+        width: 90px;
+        height: 32px;
+        font-size: 12px;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 10px;
+    }
+
+    .normal_links {
+        display: none;
+    }
+
+    .btn_menu {
+        display: inline-block;
+        margin-top: 8px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 22px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        /* Eine Spalte */
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .gallery img {
+        height: 180px;
+    }
+
+    footer {
+        flex-direction: column;
+        font-size: 12px;
+        height: auto;
+        padding: 20px 0;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* padding: 20px 40px; */
+    }
+
+    .logo {
+        margin-left: 0;
+        width: 200px;
+    }
+
+    #themeSwitch {
+        width: 110px;
+        height: 40px;
+        font-size: 14px;
+        top: 20px;
+        left: 20px;
+    }
+
+    .normal_links {
+        gap: 15px;
+        margin-right: 20px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        /* Zwei Spalten auf Tablets */
+        gap: 20px;
+        padding: 30px;
+        max-width: 90%;
+    }
+
+    .gallery img {
+        height: 220px;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+        margin: 40px 0 20px 0;
+    }
+
+    footer {
+        font-size: 13px;
+        padding: 40px 0;
+    }
+}
+
+/*Responsive index.html seite*/
+
+
+
+
+
+/*Responsive rezept.html Seite*/
+
+.rezept-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 120px auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rezept-card img.gericht-bild {
+    width: 400px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.rezept-info {
+    flex: 1;
+    /* Textbereich nimmt restliche Breite ein */
+}
+
+.rezept-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #2a7b2a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.rezept-button:hover {
+    background-color: #1f5c1f;
+}
+
+/* Responsive rezept.html Seite*/
+
+
+
+/*Responsive rezepte.html*/
+
+/* 📱 Mobile (320px–767px) */
+@media (min-width: 320px) and (max-width: 767px) {
+  .rezept-card {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .rezept-card img.gericht-bild {
+    width: 100%;
+    height: auto;
+  }
+
+  .rezept-info {
+    text-align: center;
+  }
+
+  .rezept-info h2 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .rezept-button {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  footer {
+    font-size: 12px;
+    height: auto;
+    padding: 30px 10px;
+    text-align: center;
+    
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    margin: 0;
+    width: 160px;
+  }
+
+  #themeSwitch {
+    width: 90px;
+    height: 32px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .normal_links {
+    display: none;
+  }
+
+  .btn_menu {
+    display: inline-block;
+    font-size: 14px;
+  }
+}
+
+
+/* 💻 Tablets (768px–1280px) */
+@media (min-width: 768px) and (max-width: 1280px) {
+  .rezept-card {
+    flex-direction: row;
+    align-items: center;
+    margin: 60px auto;
+    width: 90%;
+    padding: 15px;
+  }
+
+  .rezept-card img.gericht-bild {
+    width: 50%;
+    height: auto;
+  }
+
+  .rezept-info {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .rezept-info h2 {
+    font-size: 24px;
+  }
+
+  .rezept-button {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 40px 20px;
+  }
+
+  .logo {
+    width: 200px;
+    margin-left: 0;
+  }
+
+  .normal_links {
+    gap: 15px;
+    margin-right: 20px;
+  }
+
+  #themeSwitch {
+    width: 110px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+/*Responsive rezepte.html*/
+
+
+
+
+/*bandnudel-rezept.html */
+
+.rezept-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 40px;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+
+/* start .rezept-container img */
+.rezept-container .hero {
+    width: 1000px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.iconFeld {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+    width: 100%;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+
+
+.iconBox {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    /* Icon und Text vertikal zentrieren */
+    gap: 10px;
+    /* Abstand zwischen Icon und Text */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.iconBox img {
+    width: 30px;
+    /* Größe der Icons */
+    height: 30px;
+    object-fit: contain;
+    margin-bottom: 6px;
+}
+
+.iconBox span {
+    font-size: 20px;
+}
+
+
+
+
+.portionChanger {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* gap: 25px; */
+    margin-top: 60px;
+    width: 100%;
+    padding-left: 0;
+    box-sizing: border-box;
+
+}
+
+.impr_txt {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.kontaktFeld {
+    background-color: gainsboro;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+    align-items: center;
+    border-radius: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.impressumListe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+
+.impressumh1 {
+    margin-left: 0px;
+    margin-bottom: 50px;
+}
+
+.portionChanger input {
+    /* Input füllt den freien Platz */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+
+}
+
+.inputFeld input:focus {
+    border-color: #f9c907;
+    /* Akzentfarbe beim Fokus */
+    box-shadow: 0 0 5px rgba(255, 123, 0, 0.3);
+}
+
+
+
+.changerBtn {
+    padding: 10px 30px;
+    background-color: #486c35;
+    /* orangener Button */
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.inputFeld button:hover {
+    background-color: #f9c907;
+    /* dunkler beim Hover */
+}
+
+
+
+
+
+
+.zutatenFeld {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+}
+
+.zutatenFeld h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.zutatenBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+
+}
+
+.zutatenBox.grau {
+    background-color: #f0f0f0;
+}
+
+.zutatenBox.weiss {
+    background-color: #ffffff;
+}
+
+.zutatenBox .menge {
+    font-weight: bold;
+    width: 60px;
+    text-align: right;
+}
+
+.zutatenBox .zutatName {
+    font-size: 16px;
+}
+
+.iconFeld2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 25px;
+    width: 100%;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+.profile_img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+
+/*bandnudel-rezept.html Seite*/
+
+footer {
+    background-color: #333;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 14px;
+    margin: 0 -8px -8px -8px;
+    padding-top: 60px;
+}
+
+body {
+    min-height: 100vh;
+}
+
+
+header {
+
+    box-shadow: 0px 5px 0px 0px rgb(0 0 0 / 4%);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#themeSwitch {
+    width: 88px;
+    height: 48px;
+    font-size: 15px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+body.dark {
+    font-size: 18px;
+
+    background-color: rgb(37, 35, 35);
+    color: white !important;
+
+    h1 {
+        color: white !important;
+    }
+
+    header {
+        background-color: white !important;
+        margin: -8px;
+    }
+
+
+}
+
+
+.logo {
+    margin-left: 150px;
+}
+
+.normal_links {
+    display: flex;
+    gap: 20px;
+    margin-right: 120px;
+}
+
+
+
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.content {
+    position: relative;
+
+}
+
+.btn_menu {
+    display: none;
+}
+
+.resp_menu_box {
+    position: fixed;
+    top: 150px;
+    right: 0;
+    width: 175px;
+    height: 225px;
+    background: #b6bec7;
+    border-radius: 0 0 0 8px;
+
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+
+
+.closed_menu {
+    transform: translateX(100%);
+}
+
+.resp_menu_box.is-open {
+    transform: translateX(0);
+}
+
+
+
+
+.navlinks {
+
+    font-family: "Raleway", sans-serif;
+
+    gap: 10px;
+    margin-right: 120px;
+
+    padding-left: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #3caf22;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 3px;
+    font-size: 16px;
+
+
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;
+    text-align: left;
+    margin-top: 60px;
+    font-size: 40px;
+    color: #333;
+    margin-left: 120px;
+    ;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.image-container {
+    width: calc(100% - 120px);
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 120px;
+    margin-right: 120px;
+    border-radius: 8px;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.submitbtn {
+    background-color: #226c11;
+    color: white;
+    border: none;
+
+    border-radius: 2px;
+    cursor: pointer;
+    width: 100px;
+    height: 22px;
+    font-weight: lighter;
+
+
+}
+
+
+
+li {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+body {
+    margin: 8px;
+    font-family: "Raleway", sans-serif;
+}
+
+
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #d6dbd5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 4px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.btn1 {
+    margin-left: 120px;
+}
+
+.img_btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 120px;
+    box-shadow: 0px 5px 0px 0px rgb(0 0 0 / 4%);
+}
+
+.icon_img {
+    width: 20px;
+    height: 20px;
+
+}
+
+.icon_txt {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: black;
+    font-family: 'Raleway';
+    font-weight: 500;
+}
+
+p {
+    padding-right: 20px;
+    font-weight: 800;
+}
+
+.position_zutaten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portionChanger {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* gap: 25px; */
+    margin-top: 60px;
+    width: 65%;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+
+.portionChanger input {
+    /* Input füllt den freien Platz */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+
+}
+
+.inputFeld input:focus {
+    border-color: #f9c907;
+    /* Akzentfarbe beim Fokus */
+    box-shadow: 0 0 5px rgba(255, 123, 0, 0.3);
+}
+
+
+
+.changerBtn {
+    padding: 10px 30px;
+    background-color: #486c35;
+    /* orangener Button */
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.inputFeld button:hover {
+    background-color: #f9c907;
+    /* dunkler beim Hover */
+}
+
+
+
+
+
+
+.zutatenFeld {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+}
+
+.zutatenFeld h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.zutatenBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+
+}
+
+.zutatenBox.grau {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.zutatenBox.weiss {
+    background-color: #ffffff;
+    color: black;
+}
+
+.zutatenBox .menge {
+    font-weight: bold;
+    width: 60px;
+    text-align: right;
+}
+
+.zutatenBox .zutatName {
+    font-size: 16px;
+}
+
+
+
+#zutatenListe {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 5px;
+
+}
+
+.beschreibung {
+    margin-top: 30px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.icon_2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 30px;
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: anchor-center;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+h3 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+
+.profile_pic {
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #333;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 14px;
+    margin: 0 -8px -8px -8px;
+    padding-top: 60px;
+}
+
+
+
+.btn_smallsize {
+    display: none;
+}
+
+@media only screen and (min-width: 250px) and (max-width: 1100px) {
+    .btn_menu {
+        display: inline;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+
+    .normal_links {
+        display: none;
+    }
+}
+
+.resp_menu_box {
+    display: inline;
+    width: 133px;
+    height: 206px;
+    font-size: smaller;
+}
+
+
+
+@media only screen and (min-width: 1100px) {
+    .btn_menu {
+        display: none;
+    }
+
+    .resp_menu_box {
+        display: none;
+    }
+}
+
+.btn_menu2 {
+    right: -6px;
+    top: -42px;
+    width: 136px;
+}
+
+
+
+
+
+@media only screen and (min-width: 200px) and (max-width: 550px) {
+
+    .btn_menu {
+        display: inline;
+        position: absolute;
+        right: 20px;
+        top: 60px;
+    }
+
+
+
+    header img {
+        width: 220px;
+
+
+    }
+
+    h1 {
+        font-size: 28px;
+
+    }
+
+    .icon_txt {
+        font-size: 10px;
+    }
+
+    .img_btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn1 {
+        margin-left: 0px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .resp_menu_box {
+        display: inline;
+        width: 133px;
+        height: 206px;
+        font-size: smaller;
+    }
+
+    a:hover {
+        font-size: medium;
+    }
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 650px) {
+
+    .portionChanger {
+        display: contents;
+        justify-content: flex-start;
+        align-items: center;
+        /* gap: 25px; */
+        margin-top: 60px;
+        width: 65%;
+        padding-left: 0;
+        box-sizing: border-box;
+    }
+
+    .impressumh1 {
+        margin-left: 0px;
+        margin-bottom: 50px;
+        font-size: 32px;
+    }
+
+    .impressumListe {
+        font-size: 15px;
+        align-items: baseline;
+    }
+
+
+
+
+    #themeSwitch {
+        width: 50px;
+        height: 25px;
+        font-size: 8px;
+        position: absolute;
+        top: 12px;
+        left: 0px;
+    }
+
+    button {
+        padding: 5px 3px;
+        font-size: 12px;
+        border-radius: 5px;
+        background-color: #d6dbd5;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin: 4px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .btn_menu {
+        position: absolute;
+        right: 5px;
+        top: 15px;
+    }
+
+
+    .btn_menu2 {
+        right: -6px;
+        top: -26px;
+        width: 136px;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        height: 45px;
+    }
+
+
+
+
+    header img {
+        width: 130px;
+        margin-left: 89px;
+
+    }
+
+    h1 {
+        font-size: 15px;
+        margin-left: 80px;
+
+    }
+
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 60px;
+    }
+
+    p {
+        padding-right: 10px;
+    }
+
+
+    .logo {
+        margin-left: 35px;
+    }
+
+
+    .icon_txt {
+        font-size: 10px;
+    }
+
+    .img_btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn1 {
+        margin-left: 0px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .resp_menu_box {
+        display: inline;
+        width: 133px;
+        height: 206px;
+        font-size: smaller;
+    }
+
+    a:hover {
+        font-size: medium;
+    }
+
+}
+
+
+
+
+
+/* Hinterdrund kontakseite */
+#kontaktSeite {
+    background-image: url('./img/wok.jpg');
+    background-size: cover;        /* Bild füllt den gesamten Bereich */
+    background-position: center;   /* Bild zentrieren */
+    background-repeat: no-repeat;  /* kein Wiederholen */
+    
+}
+
+
+
+/*datenschutz.html*/
+.datenschutz{
+    display: flex;
+    flex-direction: column;
+}
