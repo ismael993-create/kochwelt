@@ -699,7 +699,7 @@ header {
     height: 48px;
     font-size: 15px;
     position: absolute;
-    top: 50px;
+    top: 25px;
     left: 25px;
 }
 
@@ -1087,7 +1087,7 @@ footer {
         display: inline;
         position: absolute;
         right: 20px;
-        top: 60px;
+        top: 25px;
     }
 
     .normal_links {
