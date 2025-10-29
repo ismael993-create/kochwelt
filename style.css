@@ -218,7 +218,7 @@ h1 {
     header {
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 20px 40px;
+        /* padding: 20px 40px; */
     }
 
     .logo {
@@ -1312,11 +1312,18 @@ footer {
 
 
 
+/* Hinterdrund kontakseite */
+#kontaktSeite {
+    background-image: url('./img/wok.jpg');
+    background-size: cover;        /* Bild füllt den gesamten Bereich */
+    background-position: center;   /* Bild zentrieren */
+    background-repeat: no-repeat;  /* kein Wiederholen */
+}
 
 
 
+/*datenschutz.html*/
 .datenschutz{
     display: flex;
     flex-direction: column;
-    
 }
