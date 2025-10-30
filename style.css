@@ -726,6 +726,10 @@ header {
     align-items: baseline;
 }
 
+.margin_body {
+    margin: -8px;
+}
+
 #themeSwitch {
     width: 88px;
     height: 48px;
