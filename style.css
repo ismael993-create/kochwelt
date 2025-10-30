@@ -1187,8 +1187,24 @@ footer {
         right: 20px;
         top: 60px;
     }
+.iconBox span {
+    font-size: 12px;
+}
 
-
+.iconBox {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 0px 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex
+;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s 
+ease, box-shadow 0.2s 
+ease;
+}
 
     header img {
         width: 220px;
@@ -1255,6 +1271,13 @@ footer {
         align-items: baseline;
     }
 
+    .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 35px;
+    border-radius: 8px;
+}
 
 
 
@@ -1309,29 +1332,49 @@ footer {
 
     }
 
-    h1 {
-        font-size: 15px;
-        margin-left: 80px;
+  h1 {
+    font-family: "Raleway", sans-serif;
+    text-align: left;
+    margin-top: 60px;
+    font-size: 15px;
+    color: #333;
+        margin-left: 0px;
 
-    }
+    display: flex
+;
+    justify-content: flex-start;
+}
 
+.iconFeld {
+    gap: 6px;
+}
 
-    .image-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-left: 60px;
-    }
+.rezept-container {
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
+  .image-container {
+    /* width: calc(100% - 120px); */
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    width: 80%;
+}
     p {
         padding-right: 10px;
     }
 
-
-    .logo {
-        margin-left: 35px;
-    }
-
+.logo {
+    margin-left: 74px;
+}
 
     .icon_txt {
         font-size: 10px;
@@ -1360,8 +1403,30 @@ footer {
     a:hover {
         font-size: medium;
     }
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+.txtcolor {
+    color: black;
+    font-family: "Raleway", sans-serif;
+    font-size: 11px;
+}
+
+.beschreibung {
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.rezept-container .hero {
+    width: 250px;
+    
+}
 
 }
+
 
 
 
