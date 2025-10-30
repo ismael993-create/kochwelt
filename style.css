@@ -730,6 +730,12 @@ header {
     margin: -8px;
 }
 
+.order_list {
+
+    font-weight: 800;
+
+}
+
 #themeSwitch {
     width: 88px;
     height: 48px;
