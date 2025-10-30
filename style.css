@@ -1542,7 +1542,6 @@ a {
 
 
 
-.recipe-Presentation {}
 
 
 .rezept-container1 {
@@ -1585,7 +1584,7 @@ a {
     cursor: pointer;
 }
 
-img {
+.rezeptimg {
     max-width: 40%;
     height: auto;
     /* Behält das Seitenverhältnis bei */
