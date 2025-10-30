@@ -738,8 +738,8 @@ header {
 
 #themeSwitch {
     width: 88px;
-    height: 48px;
-    font-size: 15px;
+    height: 60px;
+    font-size: 13px;
     position: absolute;
     top: 25px;
     left: 25px;
@@ -866,6 +866,12 @@ h1 {
     justify-content: flex-start;
 }
 
+.txtcolor {
+    color: black;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+}
+
 .image-container {
     width: calc(100% - 120px);
     height: 350px;
@@ -878,7 +884,7 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin-left: 120px;
+    
     margin-right: 120px;
     border-radius: 8px;
 }
@@ -1376,6 +1382,11 @@ footer {
 .datenschutz{
     display: flex;
     flex-direction: column;
+}
+
+.h1_datenschutz {
+
+    margin-left: 0px;
 }
 
 
