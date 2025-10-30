@@ -15,6 +15,16 @@ body {
     color: black;
 }
 
+.content-position {
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
 body.dark {
     font-size: 18px;
 
@@ -138,6 +148,7 @@ h1 {
     padding: 10px;
     max-width: 1000px;
     margin: 10px auto;
+    padding-top: 120px;
 
 
 }
@@ -162,9 +173,9 @@ main a {
 }
 
 /*Responsive index.html seite*/
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
     header {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         padding: 10px;
     }
@@ -217,9 +228,29 @@ main a {
         height: auto;
         padding: 20px 0;
     }
+ 
 }
 
+@media (min-width :0px) and (max-width : 1100px) {
+       .message-field1 .image-row {
+display: contents;
+    justify-content: center;
+    /* flex-wrap: nowrap; */
+    align-items: center !important;
+    flex-direction: column;
+}
+.rezept-container1 {
+    display: flex
+;
+    align-items: start;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-direction: column;
+}
 
+}
 
 @media (min-width: 768px) and (max-width: 1280px) {
     header {
@@ -360,7 +391,7 @@ main a {
     }
 
     header {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         padding: 10px;
     }
@@ -731,9 +762,9 @@ body {
 header {
 
     box-shadow: 0px 5px 0px 0px rgb(0 0 0 / 4%);
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+      display: flex
+;
+    justify-content: center;
 }
 
 .margin_body {
@@ -750,9 +781,7 @@ header {
     width: 88px;
     height: 50px;
     font-size: 13px;
-    position: absolute;
-    top: 15px;
-    left: 25px;
+  
 }
 
 body.dark {
@@ -988,6 +1017,7 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 80%;
 }
 
 .portionChanger {
@@ -1131,7 +1161,7 @@ footer {
     background-color: #333;
     height: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
     font-family: "Raleway", sans-serif;
@@ -1153,6 +1183,9 @@ footer {
         position: absolute;
         right: 20px;
         top: 25px;
+    }
+    header {
+        justify-content: flex-start;
     }
 
     .normal_links {
@@ -1214,11 +1247,7 @@ footer {
         transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    header img {
-        width: 220px;
-
-
-    }
+   
 
     h1 {
         font-size: 28px;
@@ -1601,6 +1630,7 @@ a {
     background-color: #d7d7d7;
     max-width: 1200px;
     margin: 40px auto;
+        margin-top: 120px;
 }
 
 /* Überschrift */
