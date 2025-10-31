@@ -1,34 +1,50 @@
-
-//bandnudel-rezept.html code
-const inputChanger = document.querySelector('.inputChanger');
-const changerBtn = document.querySelector('.changerBtn');
+const input = document.querySelector('.inputChanger');
+const btn = document.querySelector('.changerBtn');
 const zutaten = document.querySelectorAll('.zutatenBox');
+const BASIS = 4;
+const MIN = 1, MAX = 15;
 
-const basisPortionen = 4; // Originalwert entspricht 4 Portionen
+if (input) {
+  input.addEventListener('input', () => {
+    if (input.value === '') return;
+    let v = Math.round(Number(input.value));
+    if (isNaN(v)) { input.value = ''; return; }
+    if (v > MAX) v = MAX;
+    if (v < MIN) v = MIN;
+    input.value = v;
+  });
 
-changerBtn.addEventListener('click', () => {
-    const neuePortionen = parseFloat(inputChanger.value);
-    
-    if(isNaN(neuePortionen) || neuePortionen <= 0){
-        alert('Bitte eine gültige Zahl eingeben.');
-        return;
-    }
+  input.addEventListener('paste', (e) => {
+    const txt = (e.clipboardData || window.clipboardData).getData('text');
+    const v = Math.round(Number(txt));
+    if (isNaN(v)) { e.preventDefault(); return; }
+    e.preventDefault();
+    input.value = Math.min(Math.max(v, MIN), MAX);
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+  });
+}
 
-    zutaten.forEach(zutat => {
-        const originalMenge = parseFloat(zutat.dataset.menge);
-        const einheit = zutat.dataset.einheit;
-        const mengeSpan = zutat.querySelector('.menge');
+if (btn) {
+  btn.addEventListener('click', () => {
+    if (!input || input.value.trim() === '') { alert('Bitte Zahl eingeben.'); return; }
+    let neue = Math.round(Number(input.value));
+    if (isNaN(neue)) { alert('Ungültig.'); return; }
+    neue = Math.min(Math.max(neue, MIN), MAX);
+    input.value = neue;
 
-        if(!isNaN(originalMenge)){
-            let neueMenge = (originalMenge / basisPortionen) * neuePortionen;
-            
-            
-            neueMenge = Number.isInteger(neueMenge) ? neueMenge : neueMenge.toFixed(1);
-
-            mengeSpan.textContent = einheit ? `${neueMenge} ${einheit}` : neueMenge;
-        }
+    zutaten.forEach(z => {
+      const orig = parseFloat(z.dataset.menge);
+      const einheit = z.dataset.einheit || '';
+      const span = z.querySelector('.menge');
+      if (!isNaN(orig) && span) {
+        let m = (orig / BASIS) * neue;
+        m = Number.isInteger(m) ? m : +m.toFixed(1);
+        span.textContent = einheit ? `${m} ${einheit}` : m;
+      }
     });
-});
+  });
+}
+
 
 
 
@@ -71,7 +87,6 @@ function openClosedRespmenu() {
     box.setAttribute('aria-hidden', 'true');
   }
 }
-
 
 btnOpen.onclick = openClosedRespmenu;
 btnClose.onclick = openClosedRespmenu;

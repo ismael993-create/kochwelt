@@ -45,33 +45,56 @@ function toggleTheme() {
 
 themeSwitch.addEventListener('click', toggleTheme);
 
-
 const inputChanger = document.querySelector('.inputChanger');
 const changerBtn = document.querySelector('.changerBtn');
 const zutaten = document.querySelectorAll('.zutatenBox');
 
-const basisPortionen = 4; // Originalwert entspricht 4 Portionen
+const BASIS = 4;
+const MIN = 1;
+const MAX = 15;
 
-changerBtn.addEventListener('click', () => {
-    const neuePortionen = parseFloat(inputChanger.value);
-    
-    if(isNaN(neuePortionen) || neuePortionen <= 0){
-        alert('Bitte eine gültige Zahl eingeben.');
-        return;
-    }
+// live verhindern (Tippen)
+if (inputChanger) {
+  inputChanger.addEventListener('input', () => {
+    if (inputChanger.value === '') return;
+    let v = Math.round(Number(inputChanger.value));
+    if (isNaN(v)) { inputChanger.value = ''; return; }
+    v = Math.min(Math.max(v, MIN), MAX);
+    inputChanger.value = v;
+  });
 
-    zutaten.forEach(zutat => {
-        const originalMenge = parseFloat(zutat.dataset.menge);
-        const einheit = zutat.dataset.einheit;
-        const mengeSpan = zutat.querySelector('.menge');
+  // Paste abfangen
+  inputChanger.addEventListener('paste', (e) => {
+    const txt = (e.clipboardData || window.clipboardData).getData('text');
+    const v = Math.round(Number(txt));
+    if (isNaN(v)) { e.preventDefault(); return; }
+    e.preventDefault();
+    inputChanger.value = Math.min(Math.max(v, MIN), MAX);
+    inputChanger.dispatchEvent(new Event('input', { bubbles: true }));
+  });
+}
 
-        if(!isNaN(originalMenge)){
-            let neueMenge = (originalMenge / basisPortionen) * neuePortionen;
-            
-            
-            neueMenge = Number.isInteger(neueMenge) ? neueMenge : neueMenge.toFixed(1);
+// Button: prüfen + Zutaten anpassen
+if (changerBtn) {
+  changerBtn.addEventListener('click', () => {
+    if (!inputChanger || inputChanger.value.trim() === '') { alert('Bitte Zahl eingeben.'); return; }
+    let neuePortionen = Math.round(Number(inputChanger.value));
+    if (isNaN(neuePortionen)) { alert('Ungültig.'); return; }
+    neuePortionen = Math.min(Math.max(neuePortionen, MIN), MAX);
+    inputChanger.value = neuePortionen;
 
-            mengeSpan.textContent = einheit ? `${neueMenge} ${einheit}` : neueMenge;
-        }
+    zutaten.forEach(z => {
+      const orig = parseFloat(z.dataset.menge);
+      const einheit = z.dataset.einheit || '';
+      const span = z.querySelector('.menge');
+      if (!isNaN(orig) && span) {
+        let m = (orig / BASIS) * neuePortionen;
+        m = Number.isInteger(m) ? m : +m.toFixed(1);
+        span.textContent = einheit ? `${m} ${einheit}` : m;
+      }
     });
-});
+  });
+}
+
+
+
