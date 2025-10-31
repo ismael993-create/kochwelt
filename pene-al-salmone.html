@@ -13,11 +13,10 @@
   <script src="./penescript.js" defer></script>
       
   </head>
-
-  
-     <div class="content">
-<header>
-  <button id="themeSwitch">🌙 Dunkel</button>
+ <body>
+   <section class="aot">
+        <header>
+       <button id="themeSwitch">🌙 Dunkel</button>
  <a href="index.html"> <img class="logo" src="./img/logo.png" alt="Logo" /></a>
  <nav class="normal_links">
       <a href="index.html">Start</a>
@@ -39,16 +38,16 @@
   </div>
   </div>
 </header>
-  <body>
+ 
    
 <div class="rezept-container">
     <h1>Penne al Salmone</h1>
 
     <div class="image-container">
-      <img src="./img/pene_al_salmone.jpg" alt="Lachsnudeln" />
+      <img class="hero" src="./img/pene_al_salmone.jpg" alt="Lachsnudeln" />
     </div>
 
-     <div class="iconFeld iconfeld_small">
+       <div class="iconFeld iconfeld_small">
                 <div class="iconBox">
                     <img src="./img/icons/clock-regular.svg" alt="Zeit Icon">
                     <span>45 Min</span>
@@ -66,14 +65,12 @@
 
 
   
-   <div class="content-position">  
-<div class="position_zutaten">
- <div class="portionChanger">
-                <p>Zutaten für :</p>
-                <input type="number" min="1" max="15" placeholder="4" class="inputChanger" />
-                <button class="changerBtn">Portionen</button>
-            </div>
+    <div class="position_zutaten">
 
+            <div class="portionChanger">
+                <a>Zutaten für</a>
+<input type="number" min="1" max="15" placeholder="4" class="inputChanger" />                <button class="changerBtn">Portion</button>
+            </div>
             
             <div class="zutatenOutput"></div>
 

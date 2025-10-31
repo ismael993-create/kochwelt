@@ -1750,7 +1750,7 @@ a {
     
     margin: 40px auto;
         margin-top: 120px;
-            width: -webkit-fill-available;
+            width: 100%;
 }
 
 /* Überschrift */
