@@ -254,7 +254,6 @@ display: contents;
     display: flex
 ;
     align-items: start;
-    padding: 20px;
     gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
@@ -1030,7 +1029,6 @@ button {
 }
 
 p {
-    padding-right: 20px;
     font-weight: 800;
 }
 
@@ -1043,11 +1041,10 @@ p {
 }
 
 .portionChanger {
-    /* display: flex
-; */
-    /* justify-content: flex-start; */
-    /* align-items: center; */
-    /* gap: 25px; */
+    display: flex;  
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 25px; 
     margin-top: 60px;
     width: 55%;
     padding-left: 0;
@@ -1493,9 +1490,7 @@ footer {
         width: 80%;
     }
 
-    p {
-        padding-right: 10px;
-    }
+   
 
     .logo {
         margin-left: 74px;
