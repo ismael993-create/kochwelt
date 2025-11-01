@@ -7,7 +7,7 @@
 #themeSwitch {
     width: 208px;
     height: 48px;
-    font-size: 24px;
+    font-size: 20px;
 }
 .aot {
     width: 100dvw;
@@ -249,13 +249,10 @@ display: contents;
     }
 
     #themeSwitch {
-        width: 110px;
-        height: 40px;
-        font-size: 14px;
-        top: 20px;
-        left: 20px;
-    }
-
+    width: 208px;
+    height: 48px;
+    font-size: 20px;
+}
     .normal_links {
         gap: 15px;
         margin-right: 20px;
@@ -410,11 +407,11 @@ display: contents;
     }
 
     #themeSwitch {
-        width: 90px;
-        height: 32px;
-        font-size: 12px;
-        margin-bottom: 10px;
-    }
+    width: 208px;
+    height: 48px;
+    font-size: 20px;
+}
+    
 
     .normal_links {
         display: none;
@@ -465,14 +462,10 @@ header {
     }
 
     #themeSwitch {
-        width: 90px;
-        height: 32px;
-        font-size: 12px;
-        position: relative;
-        top: 0;
-        left: 0;
-        margin-bottom: 10px;
-    }
+    width: 100px;
+    height: 48px;
+    font-size: 20px;
+}
 
     .normal_links {
         display: none;
@@ -782,7 +775,7 @@ header {
     box-shadow: 0px 5px 0px 0px rgb(0 0 0 / 4%);
       display: flex
 ;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 
@@ -793,12 +786,6 @@ header {
 
 }
 
-#themeSwitch {
-    width: 88px;
-    height: 50px;
-    font-size: 13px;
-  
-}
 
 body.dark {
     font-size: 18px;
@@ -981,8 +968,7 @@ body {
 
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 5px;
     background-color: #d6dbd5;
     color: white;
@@ -1400,22 +1386,10 @@ footer {
         width: 300px !important;
     }
 
-  
-
-
-
-    #themeSwitch {
-        width: 50px;
-        height: 25px;
-        font-size: 8px;
-        position: absolute;
-        top: 12px;
-        left: 0px;
-    }
 
     button {
         padding: 5px 3px;
-        font-size: 12px;
+        font-size: 20px;
         border-radius: 5px;
         background-color: #d6dbd5;
         color: white;
@@ -1728,12 +1702,12 @@ a {
 
 
 .message-field1 {
+    margin-top: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
     background-color: #d7d7d7;
     
-    margin-top: 120px;
     width: 100dvw;
 }
 
@@ -1780,7 +1754,7 @@ a {
 .message-field2 {
     max-width: 1200px;
     margin: 40px auto;
-    padding: 0px 20px;
+    padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
 }
