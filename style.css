@@ -45,7 +45,9 @@ body.dark {
         background-color: white !important;
         margin: -8px;
     }
-
+    h2 {
+        color: white;
+    }
 
 }
 
@@ -151,9 +153,7 @@ a:hover {
 }
 
 
-h1 {
-    padding-top: 32px;
-}
+
 
 
 
@@ -216,15 +216,7 @@ display: contents;
     align-items: center !important;
     flex-direction: column;
 }
-.rezept-container1 {
-    display: flex
-;
-    align-items: start;
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    flex-direction: column;
-}
+
  
 
 }
@@ -284,7 +276,7 @@ display: contents;
     h1 {
         font-size: 28px;
         text-align: center;
-        margin: 40px 0 20px 0;
+        margin: 20px 0 20px 0;
     }
 
     footer {
@@ -493,9 +485,9 @@ header {
     }
 
     h1 {
-        font-size: 22px;
+        font-size: 24px;
         text-align: center;
-        margin: 20px 0;
+        margin: 10px 0;
     }
 
     .gallery {
@@ -582,7 +574,8 @@ header {
 }
 
 .iconBox span {
-    font-size: 20px;
+    font-size: 24px;
+    color: #000000;
 }
 
 
@@ -917,7 +910,7 @@ a:hover {
 h1 {
     font-family: "Raleway", sans-serif;
     text-align: left;
-    margin-top: 60px;
+    margin-top: 30px;
     font-size: 40px;
     color: #333;
     
@@ -1299,7 +1292,9 @@ footer {
    
 
     h1 {
-        font-size: 28px;
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 32px;
 
     }
 
@@ -1342,8 +1337,7 @@ footer {
 
 
     .iconfeld_small {
-        display: flex
-;
+        display: flex;
         justify-content: center;
         align-items: center;
         gap: 15px;
@@ -1352,6 +1346,7 @@ footer {
         padding-left: 0;
         box-sizing: border-box;
         flex-direction: column;
+        
     }
 
 
@@ -1463,8 +1458,8 @@ footer {
     h1 {
         font-family: "Raleway", sans-serif;
         text-align: left;
-        margin-top: 60px;
-        font-size: 15px;
+        margin-top: 20px;
+        font-size: 24px;
         color: #333;
         margin-left: 0px;
 
@@ -1530,10 +1525,10 @@ footer {
 
     h2 {
         margin-bottom: 20px;
-        font-size: 24px;
-        color: #333;
+        font-size: 22px;
+        color: black;
     }
-
+    
     .txtcolor {
         color: black;
         font-family: "Raleway", sans-serif;
@@ -1667,14 +1662,7 @@ a {
 
 
 
-.rezept-container1 {
-    display: flex;
-    align-items: start;
-    padding: 20px;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 
 
 
@@ -1706,14 +1694,33 @@ a {
     border-radius: 5px;
     cursor: pointer;
 }
-
+.rezept-container1 {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.rezept-container1 img {
+    width: 100%;
+}
 .rezeptimg {
-    max-width: 40%;
+    max-width: 60%;
     height: auto;
     /* Behält das Seitenverhältnis bei */
     border-radius: 3%;
 }
-
+@media screen and (min-width: 550px) {
+    .rezept-container1 {
+        display: flex;
+        flex-direction: row;
+    }
+    .rezept-container1 img {
+    width: 60%;
+}
+}
 
 
 
