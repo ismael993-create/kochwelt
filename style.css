@@ -1705,6 +1705,7 @@ a {
 }
 .rezept-container1 img {
     width: 100%;
+    border-radius: 3%;
 }
 .rezeptimg {
     max-width: 60%;
@@ -1719,6 +1720,7 @@ a {
     }
     .rezept-container1 img {
     width: 60%;
+
 }
 }
 
