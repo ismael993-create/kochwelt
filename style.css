@@ -89,7 +89,10 @@ header {
     justify-content: space-between;
     align-items: baseline;
 }
-
+.headerStart {
+    display: flex;
+    justify-content: center;
+}
 
 
 .normal_links {
@@ -118,7 +121,6 @@ a:hover {
     color: #3caf22;
     text-underline-offset: 15px;
     text-decoration-thickness: 3px;
-    font-size: 16px;
 
 
 }
@@ -238,6 +240,7 @@ display: contents;
    
    
     header {
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         /* padding: 20px 40px; */
@@ -889,7 +892,6 @@ a:hover {
     color: #3caf22;
     text-underline-offset: 15px;
     text-decoration-thickness: 3px;
-    font-size: 16px;
 
 
 }
@@ -1309,9 +1311,7 @@ footer {
         font-size: smaller;
     }
 
-    a:hover {
-        font-size: medium;
-    }
+    
 
 }
 
@@ -1493,9 +1493,7 @@ footer {
         font-size: smaller;
     }
 
-    a:hover {
-        font-size: medium;
-    }
+    
 
     h2 {
         margin-bottom: 20px;
