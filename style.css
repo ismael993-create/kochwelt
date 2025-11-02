@@ -1537,11 +1537,14 @@ footer {
     background-repeat: no-repeat;
     /* kein Wiederholen */
     width: 100dvw;
-    height: 100vh;
+    height: 81vh;
+    
 }
 body {
     overflow-x: hidden;
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 
@@ -1582,11 +1585,10 @@ form {
     display: flex;
     flex-direction: column;
     text-align: left;
+    margin-top: 100px;
     padding-top: 75px;
-    margin-top: 30dvh;
     align-items: center;
     border-radius: 3%;
-    margin-bottom: 30dvh;
 }
 
 form textarea {
@@ -1789,5 +1791,15 @@ a {
 
 
 
-
+#kontaktSeite {
+    background-image: url('./img/wok.jpg');
+    background-size: cover;
+    /* Bild füllt den gesamten Bereich */
+    background-position: center;
+    /* Bild zentrieren */
+    background-repeat: no-repeat;
+    /* kein Wiederholen */
+    width: 100dvw;
+    height: 77vh;
+}
 
