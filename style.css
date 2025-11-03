@@ -15,7 +15,7 @@
 
 body {
     min-height: 100dvh;
-    font-size: 18px;
+    font-size: 20px;
     color: black;
     
     display: flex;
@@ -36,19 +36,38 @@ body {
 
 
 body.dark {
-    font-size: 18px;
+    font-size: 20px;
 
     background-color: rgb(37, 35, 35);
     color: white !important;
 
     header {
         background-color: white !important;
-        margin: -8px;
     }
     h2 {
         color: white;
     }
-
+    h1 {
+        color: white !important;
+    }
+}
+header {
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    
+}
+.headerContent{
+    max-width: 1440px;
+    box-shadow: 0px 5px 0px 0px rgb(0 0 0 / 4%);
+      display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+.headerContent a {
+    display: flex;
+    justify-content: center;
 }
 
 .btn_menu {
@@ -82,13 +101,7 @@ body.dark {
     transform: translateX(0);
 }
 
-header {
 
-    box-shadow: 0px 5px 0px 0px rgb(0 0 0 / 4%);
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
 .headerStart {
     display: flex;
     justify-content: center;
@@ -119,9 +132,6 @@ header {
 
 a:hover {
     color: #3caf22;
-    text-underline-offset: 15px;
-    text-decoration-thickness: 3px;
-
 
 }
 
@@ -242,7 +252,7 @@ display: contents;
     header {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         /* padding: 20px 40px; */
     }
 
@@ -260,7 +270,10 @@ display: contents;
         gap: 15px;
         margin-right: 20px;
     }
-
+    .navlinks {
+        margin-top: 10px;
+        margin-left: 35px;
+    }
     .gallery {
         grid-template-columns: repeat(2, 1fr);
         /* Zwei Spalten auf Tablets */
@@ -278,6 +291,18 @@ display: contents;
         text-align: center;
         margin: 20px 0 20px 0;
     }
+    #kontaktSeite {
+    background-image: url('./img/wok.jpg');
+    background-size: cover;
+    /* Bild füllt den gesamten Bereich */
+    background-position: center;
+    /* Bild zentrieren */
+    background-repeat: no-repeat;
+    /* kein Wiederholen */
+    width: 100dvw;
+    height: 90dvh;
+    
+}
 
     footer {
         width: 100%;
@@ -331,17 +356,14 @@ display: contents;
     background-color: #1f5c1f;
 }
 
-/* Responsive rezept.html Seite*/
 
-
-
-/*Responsive rezepte.html*/
-
-/* 📱 Mobile (320px–767px) */
 @media (min-width: 320px) and (max-width: 767px) {
     body {
         width: 100%;
         overflow-x: hidden;
+    }
+    .headerContent{
+    max-width: 320px;
     }
     .message-field1 {
         display: flex;
@@ -398,11 +420,6 @@ display: contents;
         width: 100%;
     }
 
-    header {
-        flex-direction: row;
-        align-items: center;
-        padding: 10px;
-    }
 
     .logo {
         margin: 0;
@@ -419,10 +436,17 @@ display: contents;
     .normal_links {
         display: none;
     }
-
+    .navlinks {
+        margin-top: 10px;
+        margin-left: 35px;
+    }
     .btn_menu {
         display: inline-block;
         font-size: 14px;
+    }
+
+    .contentKontaktseite {
+        height: 100vh;
     }
 
     #kontaktFeld {
@@ -453,11 +477,6 @@ display: contents;
         width: 200px;
     }
 
-header {
-        flex-direction: row;
-        align-items: center;
-        padding: 10px;
-    }
 
     .logo {
         margin: 0;
@@ -768,115 +787,13 @@ footer a {
     color: white;
 }
 
-body {
-    min-height: 100vh;
-}
 
-
-header {
-
-    box-shadow: 0px 5px 0px 0px rgb(0 0 0 / 4%);
-      display: flex
-;
-    justify-content: space-between;
-}
 
 
 
 .order_list {
 
     font-weight: 800;
-
-}
-
-
-body.dark {
-    font-size: 18px;
-
-    background-color: rgb(37, 35, 35);
-    color: white !important;
-
-    h1 {
-        color: white !important;
-    }
-
-    header {
-        background-color: white !important;
-        margin: -8px;
-    }
-
-
-}
-
-
-
-.normal_links {
-    display: flex;
-    gap: 20px;
-    margin-right: 120px;
-}
-
-
-
-
-.raleway {
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-}
-
-.content {
-    position: relative;
-    width: 100%;
-
-}
-
-.btn_menu {
-    display: none;
-}
-
-.resp_menu_box {
-    position: fixed;
-    top: 150px;
-    right: 0;
-    width: 175px;
-    height: 225px;
-    background: #b6bec7;
-    border-radius: 0 0 0 8px;
-
-    display: none;
-    flex-direction: column;
-    gap: 12px;
-
-    transform: translateX(0);
-    transition: transform 0.3s ease-in-out;
-    z-index: 1;
-}
-
-
-.closed_menu {
-    transform: translateX(100%);
-}
-
-.resp_menu_box.is-open {
-    transform: translateX(0);
-}
-
-
-
-
-.navlinks {
-
-    font-family: "Raleway", sans-serif;
-
-    gap: 10px;
-    margin-right: 120px;
-
-    padding-left: 25px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
 
 }
 
@@ -890,9 +807,6 @@ header a {
 
 a:hover {
     color: #3caf22;
-    text-underline-offset: 15px;
-    text-decoration-thickness: 3px;
-
 
 }
 
@@ -960,12 +874,6 @@ li {
     margin-left: 25px;
     margin-right: 25px;
 }
-
-body {
-    
-    font-family: "Raleway", sans-serif;
-}
-
 
 
 
@@ -1053,50 +961,8 @@ p {
 
 
 
-.changerBtn {
-    padding: 10px 30px;
-    background-color: #486c35;
-    /* orangener Button */
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-
-.inputFeld button:hover {
-    background-color: #f9c907;
-    /* dunkler beim Hover */
-}
 
 
-
-
-
-
-.zutatenFeld {
-    width: 100%;
-    max-width: 1000px;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-
-}
-
-.zutatenFeld h2 {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.zutatenBox {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 15px;
-
-}
 
 .zutatenBox.grau {
     background-color: #f0f0f0;
@@ -1211,9 +1077,6 @@ footer {
         position: absolute;
         right: 20px;
         top: 25px;
-    }
-    header {
-        justify-content: flex-start;
     }
 
     .normal_links {
@@ -1537,15 +1400,10 @@ footer {
     background-repeat: no-repeat;
     /* kein Wiederholen */
     width: 100dvw;
-    height: 81vh;
+    height: 90dvh;
     
 }
-body {
-    overflow-x: hidden;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
+
 
 
 /*datenschutz.html*/
@@ -1711,18 +1569,18 @@ a {
     width: 100dvw;
 }
 
-/* Überschrift */
+
 .message-field1 h2 {
     margin-bottom: 30px;
     color: #000000;
 }
 
-/* Bildreihe */
+
 .message-field1 .image-row {
     display: flex;
-    justify-content: center;  /* Bilder mittig nebeneinander */
-    flex-wrap: nowrap;        /* alles auf einer Linie */
-    align-items: flex-start;  /* optional: oben ausrichten */
+    justify-content: center; 
+    flex-wrap: nowrap;        
+    align-items: flex-start;  
 }
 
 /* Bilder selbst */
@@ -1738,7 +1596,7 @@ a {
     transform: scale(1.05);
 }
 
-/* Absatz unter den Bildern */
+
 .message-field1 p {
     font-size: 1.1em;
     color: #333;
@@ -1759,23 +1617,23 @@ a {
     border-radius: 10px;
 }
 
-/* Überschrift */
+
 .message-field2 h2 {
     margin-bottom: 20px;
     color: #264653;
     text-align: left;
 }
 
-/* Container für Text + Bild */
+
 .message-field2 .content-row {
     display: flex;
-    align-items: center;   /* vertikal zentrieren */
+    align-items: center;   
     gap: 20px;
 }
 
 /* Text links */
 .message-field2 .content-row p {
-    flex: 1;               /* nimmt so viel Platz wie möglich ein */
+    flex: 1;              
     margin: 0;
     line-height: 1.5;
     color: #333;
@@ -1786,20 +1644,8 @@ a {
     width: 300px;
     border-radius: 10px;
     height: auto;
-    flex-shrink: 0;         /* Bildgröße bleibt konstant */
+    flex-shrink: 0;       
+
 }
 
-
-
-#kontaktSeite {
-    background-image: url('./img/wok.jpg');
-    background-size: cover;
-    /* Bild füllt den gesamten Bereich */
-    background-position: center;
-    /* Bild zentrieren */
-    background-repeat: no-repeat;
-    /* kein Wiederholen */
-    width: 100dvw;
-    height: 77vh;
-}
 
