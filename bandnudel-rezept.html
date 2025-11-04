@@ -4,72 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bandnudeln-Rezept</title>
+    <title>Zucchini-Karotten-Bandnudeln</title>
     <link rel="icon" type="image/png" href="./img/logo_small.png" />
     <link rel="stylesheet" href="style.css">
     <script src="./bandnudeln.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
 </head>
 
 <body>
-    <section class="aot">
-        <header>
-    <div class="headerContent">
-       <button id="themeSwitch">🌙 Dunkel</button>
- <a href="index.html"> <img class="logo" src="./img/logo.png" alt="Logo" /></a>
- <nav class="normal_links">
-      <a href="index.html">Start</a>
-      <a href="rezept-des-tages.html">Rezept des Tages</a>
-      <a href="kontakt.html">Kontakt</a>
-      <a href="impressum.html">Impressum</a>
-    </nav>
 
-  <button class="btn_menu " id="menuToggle" type="button">info</button>
+    <div class="content">
+        <header class="headerStart">
+            <div class="contentmaxhead">
+                <a href="index.html"><img class="logo" src="./img/logo.png" alt="Logo" /></a>
 
-  <div id="resp_menu" class="resp_menu_box closed_menu" aria-hidden="true">
-    <button class="btn_menu btn_menu2" id="menuClose" type="button">close menu</button>
-    <nav class="navlinks">
-      <a href="index.html">Start</a>
-      <a href="rezept-des-tages.html">Rezept des Tages</a>
-      <a href="kontakt.html">Kontakt</a>
-      <a href="impressum.html">Impressum</a>
-    </nav>
-  </div>
-  </div>
+
+                <input type="checkbox" id="burger-toggle" class="burger-toggle">
+                <label for="burger-toggle" class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+
+                <nav class="nav-group">
+                    <a href="index.html">Start</a>
+                    <a href="rezept-des-tages.html">Rezept des Tages</a>
+                    <a href="kontakt.html">Kontakt</a>
+                    <a href="impressum.html">Impressum</a>
+                </nav>
+            </div>
         </header>
+    </div>
 
+    <div class="rezept-container">
+        <h2>Zucchini-Karotten-Bandnudeln mit Hähnchen und Tomaten</h2>
 
+        <div class="image-container">
+            <img class="hero" src="./img/food10.png" alt="Bandnudeln mit Hähnchen">
+        </div>
 
-        <div class="rezept-container">
-            <h1>Zucchini-Karotten-Bandnudeln mit Hähnchen und Tomaten</h1>
-            <!-- großes Bild -->
-            <img class="hero" src="img/food10.png" alt="Bandnudo-Hini">
-
-
-
-            <div class="iconFeld iconfeld_small">
-                <div class="iconBox">
-                    <img src="./img/icons/clock-regular.svg" alt="Zeit Icon">
-                    <span>30 Min</span>
-                </div>
-                <div class="iconBox">
-                    <img src="./img/icons/brain-solid.svg" alt="Schwierigkeitsgrad Icon">
-                    <span>Mittel</span>
-                </div>
-                <div class="iconBox">
-                    <img src="./img/icons/calendar-alt-regular.svg" alt="Kalender Icon">
-                    <span>27.10.2025</span>
-                </div>
-
+        <div class="iconFeld iconfeld_small">
+            <div class="iconBox">
+                <img src="./img/icons/clock-regular.svg" alt="Zeit Icon">
+                <span>30 Min</span>
             </div>
+            <div class="iconBox">
+                <img src="./img/icons/brain-solid.svg" alt="Schwierigkeitsgrad Icon">
+                <span>Mittel</span>
+            </div>
+            <div class="iconBox">
+                <img src="./img/icons/calendar-alt-regular.svg" alt="Kalender Icon">
+                <span>27.10.2025</span>
+            </div>
+        </div>
 
-            <div class="position_zutaten">
-
+        <div class="position_zutaten">
             <div class="portionChanger">
-                <a>Zutaten für</a>
-<input type="number" min="1" max="15" placeholder="4" class="inputChanger" />                <button class="changerBtn">Portion</button>
+                <p>Zutaten für :</p>
+                <input type="number" min="1" max="15" placeholder="4" class="inputChanger" />
+                <button class="changerBtn">Portionen</button>
             </div>
 
-            <!-- Neues Feld für berechnete Zutaten -->
             <div class="zutatenOutput"></div>
 
             <div class="zutatenFeld">
@@ -113,57 +112,51 @@
                     <span class="menge">-</span> <span class="zutatName">Salz, Pfeffer</span>
                 </div>
             </div>
-            </div>
-            <div class="beschreibung">
-            <div class="iconFeld2 iconfeld_small">
-                <h2>Zubereitung</h2>
+        </div>
 
-                <div class="iconBox">
-                    <img src="./img/icons/clock-regular.svg" alt="Zeit Icon">
-                    <span>Gesamtzeit ca 30 Min </span>
-                </div>
-
-
-
+        <div class="beschreibung">
+            <h2>Zubereitung:</h2>
+            <div class="icon_2 iconfeld_small">
+                <button class="iconBox txtcolor">
+                    <img class="icon_img" src="./img/icons/clock-regular.svg" alt="utensils" /> Gesamtzeit ca 30 Min
+                </button>
             </div>
 
+            <p>
+                1. Das Hähnchenbrustfilet waschen, mit Küchenpapier abtupfen und in mundgerechte Stücke schneiden.<br>
+                Das Olivenöl mit der roten Currypaste in einer beschichteten Pfanne erhitzen und das Hähnchenfleisch<br>
+                darin von allen Seiten knusprig braten.<br><br>
 
+                2. Währenddessen die Zucchini waschen und die Karotten schälen.<br>
+                Nun mit einem Sparschäler rundherum die „Bandnudeln“ abschälen, bei den Zucchini möglichst das innere
+                Kerngehäuse übrig lassen,<br>
+                die Karotten können komplett verwendet werden.<br>
+                Sollten die Scheiben zu breit werden, kann man das Gemüse mit einem Messer vor dem Abschälen längs
+                einschneiden.<br><br>
 
-            <p>1. Das Hähnchenbrustfilet waschen, mit Küchenpapier abtupfen und in mundgerechte Stücke schneiden.
-                Das Olivenöl mit der roten Currypaste in einer beschichteten Pfanne erhitzen und das Hähnchenfleisch
-                darin von allen Seiten knusprig braten.</p>
-            <p>2. Währenddessen die Zucchini waschen und die Karotten schälen. Nun mit einem Sparschäler rundherum
-                die „Bandnudeln“ abschälen, bei den Zucchini möglichst das innere Kerngehäuse übrig lassen, die
-                Karotten können komplett verwendet werden. Sollten die Scheiben zu breit werden, kann man das Gemüse
-                mit einem Messer vor dem Abschälen längs einschneiden.</p>
-            <p>3. Das fertig gebratene Hähnchenfleisch herausnehmen und dabei möglichst den Bratensaft in der Pfanne
-                lassen. Die Gemüsebandnudeln in Wasser und Brühe mit dem Bratensaft aufkochen und einige Minuten
-                garen lassen. Derweil die Tomaten würfeln und zusammen mit dem Tomatenmark zum Gemüse geben.</p>
-            <p>4. Zum Schluss den Ziegenfrischkäse und das Hähnchenfleisch zugeben und alles noch einmal unter
-                Rühren erhitzen. Mit Salz und Pfeffer abschmecken und servieren.</p>
+                3. Das fertig gebratene Hähnchenfleisch herausnehmen und dabei möglichst den Bratensaft in der Pfanne
+                lassen.<br>
+                Die Gemüsebandnudeln in Wasser und Brühe mit dem Bratensaft aufkochen und einige Minuten garen
+                lassen.<br>
+                Derweil die Tomaten würfeln und zusammen mit dem Tomatenmark zum Gemüse geben.<br><br>
+
+                4. Zum Schluss den Ziegenfrischkäse und das Hähnchenfleisch zugeben und alles noch einmal unter Rühren
+                erhitzen.<br>
+                Mit Salz und Pfeffer abschmecken und servieren.
+            </p>
 
             <h3>Rezept erstellt von</h3>
             <div class="profile">
-                <img class="profile_img" src="./img/profile-nick.png" height="65px" alt="Umbekannte">
+                <img class="profile_img" src="./img/profile-nick.png" width="65px" alt="Nick Ezenwa">
                 <p>Nick Ezenwa</p>
             </div>
-            </div>
-
-
-
-
-
-
         </div>
-
-    </section>
+    </div>
 
     <footer>
         <p>© 2025 Rezeptseite. Alle Rechte vorbehalten.</p>
         <a href="datenschutz.html">Datenschutz</a>
-
     </footer>
-
 
 </body>
 

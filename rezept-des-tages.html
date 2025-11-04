@@ -10,123 +10,108 @@
 </head>
 
 <body>
-    
-    <section class="subpage">
-        <header>
-            <div class="headerContent">
-            <button id="themeSwitch">🌙 Dunkel</button>
-            <a href="index.html"> <img class="logo" src="./img/logo.png" alt="Logo" /></a>
-            <nav class="normal_links">
+
+
+
+    <header class="headerStart">
+        <div class="contentmaxhead">
+            <a href="index.html"><img class="logo" src="./img/logo.png" alt="Logo" /></a>
+
+           
+            <input type="checkbox" id="burger-toggle" class="burger-toggle">
+            <label for="burger-toggle" class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+          
+            <nav class="nav-group">
                 <a href="index.html">Start</a>
                 <a href="rezept-des-tages.html">Rezept des Tages</a>
                 <a href="kontakt.html">Kontakt</a>
                 <a href="impressum.html">Impressum</a>
             </nav>
+        </div>
+    </header>
 
-            <button class="btn_menu " id="menuToggle" type="button">info</button>
 
-            <div id="resp_menu" class="resp_menu_box closed_menu" aria-hidden="true">
-                <button class="btn_menu btn_menu2" id="menuClose" type="button">close menu</button>
-                <nav class="navlinks">
-                    <a href="index.html">Start</a>
-                    <a href="rezept-des-tages.html">Rezept des Tages</a>
-                    <a href="kontakt.html">Kontakt</a>
-                    <a href="impressum.html">Impressum</a>
-                </nav>
+
+
+
+
+
+    <!-- HAUPTBEREICH MIT 3 FELDERN -->
+
+
+    <section class="recipe-Presentation ">
+
+        <div class="recipe-image">
+            <img src="./img/food10.png" alt="Bandnudeln">
+        </div>
+
+        <div class="recipe-info">
+            <h2>Bandnudeln</h2>
+            <p>Ein leckeres und frisches Bandnudel-Rezept, ganz einfach und schnell in nur 30 Minuten genießbar!</p>
+            <a href="bandnudel-rezept.html">
+                <button class="rezept-button">Rezept öffnen</button>
+            </a>
+        </div>
+
+    </section>
+
+    <section class="message-field1">
+        <h2>Lust auf was Neues?</h2>
+
+        <div class="image-row">
+            <div class="image-item">
+                <a href="./pene-al-salmone.html"><img class="rezeptimg" src="./img/pene_al_salmone.jpg"
+                        alt="pene-al-salmone"></a>
+                <p>Pene al Salmone</p>
             </div>
+
+            <div class="image-item">
+                <a href="./carbonara.html"><img class="rezeptimg" src="./img/spaghettiCarbonara.jpg"
+                        alt="Spaghetti Carbonara"></a>
+                <p>Spaghetti Carbonara</p>
             </div>
-        </header>
 
+            <div class="image-item">
+                <a href="./bandnudel-rezept.html"><img class="rezeptimg" src="./img/food10.png" alt="Bandnudel"></a>
+                <p>Bandnudeln</p>
+            </div>
+        </div>
 
+    </section>
 
-        <!-- HAUPTBEREICH MIT 3 FELDERN -->
-        <main>
-            <section class="recipe-Presentation ">
-
-                <div class="rezept-container1 ">
-                    <img src="./img/food10.png" alt="Bandnudeln">
-                    <div class="rezept-text1">
-                        <h2>Bandnudeln</h2>
-                        <p>Ein leckeres und Frisches Bandnudel Rezept ganz einfach und Schnell in nur 30 min. Genießbar ! </p>
-                            
-                            <a href="bandnudel-rezept.html">
-                    <button class="rezept-button">Rezept Öffnen</button>
-                    </div>
-                </div>
-
-            </section>
-
-            <section class="message-field1">
-                <h2>Lust auf was Neues?</h2>
-
-                <div class="image-row">
-                    <div class="image-item">
-                        <a href="./pene-al-salmone.html"><img class="rezeptimg" src="./img/pene_al_salmone.jpg" alt="pene-al-salmone"></a>
-                        <p>Pene al Salmone</p>
-                    </div>
-                    <div class="image-item">
-                        <a href="./carbonara.html"><img class="rezeptimg" src="./img/spaghettiCarbonara.jpg" alt="Spaghetti Carbonara"></a>
-                        <p>Spaghetti Carbonara</p>
-                    </div>
-
-                    <div class="image-item">
-                        <a href="./bandnudel-rezept.html"><img class="rezeptimg" src="./img/food10.png" alt="Bandnudel"></a>
-                        <p>Bandnudeln</p>
-                    </div>
-                </div>
-
-            </section>
-
-
-
-  
 
     <section class="message-field2">
-        <h2>Bestellen vs Selber Kochen ! - Was ist besser?</h2>
-        <div class="content-row">
+        <div class="message-content">
+            <h2>Bestellen vs Selber Kochen! - Was ist besser?</h2>
             <p>
-                Dieses Rezept und besonders einfach und Schnell zum zubereiten und für jeden Gedacht
+                Dieses Rezept ist besonders einfach und<br>
+                schnell zuzubereiten ideal für jeden!
             </p>
+        </div>
+
+        <div class="message-image">
             <img class="rezeptimg" src="./img/food10.png" alt="Bandnudel">
         </div>
     </section>
 
-    </main>
-
-
-</div>
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-    </section>
     <footer>
-
-
         <p>© 2025 Rezeptseite. Alle Rechte vorbehalten.</p>
         <a href="datenschutz.html">Datenschutz</a>
-
     </footer>
 
 
     <script src="script.js"></script>
-
-
-
-
-
-
 
 
 </body>

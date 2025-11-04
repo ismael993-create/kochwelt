@@ -1,69 +1,69 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontaktseite</title>
-    <link rel="icon" type="image/png" href="./img/logo_small.png" />
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontaktseite</title>
+  <link rel="icon" type="image/png" href="./img/logo_small.png" />
+  <link rel="stylesheet" href="style.css">
+
 
 </head>
+
 <body>
-  <main class="contentKontaktseite">
-    <header>
- <div class="headerContent">
- <a href="index.html"> <img class="logo" src="./img/logo.png" alt="Logo" /></a>
- <nav class="normal_links">
-      <a href="index.html">Start</a>
-      <a href="rezept-des-tages.html">Rezept des Tages</a>
-      <a href="kontakt.html">Kontakt</a>
-      <a href="impressum.html">Impressum</a>
-    </nav>
+  <header class="headerStart">
+    <div class="contentmaxhead">
+      <a href="index.html"><img class="logo" src="./img/logo.png" alt="Logo" /></a>
 
-  <button class="btn_menu " id="menuToggle" type="button">info</button>
-
-  <div id="resp_menu" class="resp_menu_box closed_menu" aria-hidden="true">
-    <button class="btn_menu btn_menu2" id="menuClose" type="button">close menu</button>
-    <nav class="navlinks">
-      <a href="index.html">Start</a>
-      <a href="rezept-des-tages.html">Rezept des Tages</a>
-      <a href="kontakt.html">Kontakt</a>
-      <a href="impressum.html">Impressum</a>
-    </nav>
-  </div>
-  </div>
-</div>
-</header>
-    <main  id="kontaktSeite">
-        <form class="kontakt_small" id="kontaktFeld" onsubmit="sendMail(event)">
-          <h3>Kontaktieren Sie uns:</h3>
-            <label>Dein Name:
-            <input class="kontakt_small2" class="deinName" type="text" required>
-            </label>
-            <label>
-                    Deine E-Mail:
-                    <input class="kontakt_small2" class="deineEmail" type="email" name="email" required>
-            </label>
-            <label >
-                Deine Nachricht:
-                <textarea class="textart kontakt_small2" rows="20" cols="53" class="deineNachricht" name="message" required></textarea>
-            </label>
-            <!-- your other form fields go here -->
-            <button class="abschicken" type="submit">Abschicken</button>
-        </form>
-    </main>
-
- <footer>
-
-
-      <p>© 2025 Rezeptseite. Alle Rechte vorbehalten.</p>
-      <a href="datenschutz.html">Datenschutz</a>
       
-    </footer>
+      <input type="checkbox" id="burger-toggle" class="burger-toggle">
+      <label for="burger-toggle" class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-</main>
+    
+      <nav class="nav-group">
+        <a href="index.html">Start</a>
+        <a href="rezept-des-tages.html">Rezept des Tages</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+      </nav>
+    </div>
+  </header>
 
-    <script src="kontakt.js"></script>
+
+  <main id="kontaktSeite">
+    <form class="kontakt_small" id="kontaktFeld" onsubmit="sendMail(event)">
+      <h3>Kontaktieren Sie uns:</h3>
+      <label>Dein Name:
+        <input class="kontakt_small2" class="deinName" type="text" required>
+      </label>
+      <label>
+        Deine E-Mail:
+        <input class="kontakt_small2" class="deineEmail" type="email" name="email" required>
+      </label>
+      <label>
+        Deine Nachricht:
+        <textarea class="textart kontakt_small2" rows="20" cols="53" class="deineNachricht" name="message"
+          required></textarea>
+      </label>
+      <!-- your other form fields go here -->
+      <button class="abschicken" type="submit">Abschicken</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Rezeptseite. Alle Rechte vorbehalten.</p>
+    <a href="datenschutz.html">Datenschutz</a>
+
+  </footer>
+
+
+
+  <script src="kontakt.js"></script>
 </body>
+
 </html>
