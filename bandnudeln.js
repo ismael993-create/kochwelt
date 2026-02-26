@@ -1,84 +1,129 @@
+// ===============================
+// PORTIONSRECHNER
+// ===============================
+
 const input = document.querySelector('.inputChanger');
 const btn = document.querySelector('.changerBtn');
 const zutaten = document.querySelectorAll('.zutatenBox');
+
 const BASIS = 4;
-const MIN = 1, MAX = 15;
+const MIN = 1;
+const MAX = 15;
 
 if (input) {
   input.addEventListener('input', () => {
     if (input.value === '') return;
-    let v = Math.round(Number(input.value));
-    if (isNaN(v)) { input.value = ''; return; }
-    if (v > MAX) v = MAX;
-    if (v < MIN) v = MIN;
-    input.value = v;
+
+    let value = Math.round(Number(input.value));
+
+    if (isNaN(value)) {
+      input.value = '';
+      return;
+    }
+
+    if (value > MAX) value = MAX;
+    if (value < MIN) value = MIN;
+
+    input.value = value;
   });
 
   input.addEventListener('paste', (e) => {
-    const txt = (e.clipboardData || window.clipboardData).getData('text');
-    const v = Math.round(Number(txt));
-    if (isNaN(v)) { e.preventDefault(); return; }
+    const text = (e.clipboardData || window.clipboardData).getData('text');
+    let value = Math.round(Number(text));
+
+    if (isNaN(value)) {
+      e.preventDefault();
+      return;
+    }
+
     e.preventDefault();
-    input.value = Math.min(Math.max(v, MIN), MAX);
+    value = Math.min(Math.max(value, MIN), MAX);
+    input.value = value;
     input.dispatchEvent(new Event('input', { bubbles: true }));
   });
 }
 
-if (btn) {
+if (btn && input && zutaten.length > 0) {
   btn.addEventListener('click', () => {
-    if (!input || input.value.trim() === '') { alert('Bitte Zahl eingeben.'); return; }
-    let neue = Math.round(Number(input.value));
-    if (isNaN(neue)) { alert('Ungültig.'); return; }
-    neue = Math.min(Math.max(neue, MIN), MAX);
-    input.value = neue;
 
-    zutaten.forEach(z => {
-      const orig = parseFloat(z.dataset.menge);
-      const einheit = z.dataset.einheit || '';
-      const span = z.querySelector('.menge');
-      if (!isNaN(orig) && span) {
-        let m = (orig / BASIS) * neue;
-        m = Number.isInteger(m) ? m : +m.toFixed(1);
-        span.textContent = einheit ? `${m} ${einheit}` : m;
+    if (input.value.trim() === '') {
+      alert('Bitte eine Zahl eingeben.');
+      return;
+    }
+
+    let neuePortion = Math.round(Number(input.value));
+
+    if (isNaN(neuePortion)) {
+      alert('Ungültige Eingabe.');
+      return;
+    }
+
+    neuePortion = Math.min(Math.max(neuePortion, MIN), MAX);
+    input.value = neuePortion;
+
+    zutaten.forEach(zutat => {
+      const originalMenge = parseFloat(zutat.dataset.menge);
+      const einheit = zutat.dataset.einheit || '';
+      const mengeSpan = zutat.querySelector('.menge');
+
+      if (!isNaN(originalMenge) && mengeSpan) {
+        let neueMenge = (originalMenge / BASIS) * neuePortion;
+
+        neueMenge = Number.isInteger(neueMenge)
+          ? neueMenge
+          : +neueMenge.toFixed(1);
+
+        mengeSpan.textContent = einheit
+          ? `${neueMenge} ${einheit}`
+          : neueMenge;
       }
     });
+
   });
 }
 
 
+// ===============================
+// DARK / LIGHT MODE
+// ===============================
 
-
-// Toogle-theme
 const themeSwitch = document.querySelector('#themeSwitch');
 const body = document.body;
 
-// damit die seite direkt dunkel lädt
-if (localStorage.getItem('theme') === 'dark') {
+if (themeSwitch) {
+
+  if (localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark');
     themeSwitch.textContent = '🌞 Hell';
-}
+  }
 
-//function zum wechsel zwischen hell und dunkel
-function toggleTheme() {
-
+  function toggleTheme() {
     body.classList.toggle('dark');
 
     if (body.classList.contains('dark')) {
-    themeSwitch.textContent = '🌞 Hell';
-    localStorage.setItem('theme', 'dark');
-  } else {
-    themeSwitch.textContent = '🌙 Dunkel';
-    localStorage.setItem('theme', 'light');
+      themeSwitch.textContent = '🌞 Hell';
+      localStorage.setItem('theme', 'dark');
+    } else {
+      themeSwitch.textContent = '🌙 Dunkel';
+      localStorage.setItem('theme', 'light');
+    }
   }
+
+  themeSwitch.addEventListener('click', toggleTheme);
 }
 
-themeSwitch.addEventListener('click', toggleTheme);
 
-let box = document.getElementById('resp_menu');
-let btnOpen = document.getElementById('menuToggle');
-let btnClose = document.getElementById('menuClose');
+// ===============================
+// RESPONSIVE MENU
+// ===============================
+
+const box = document.getElementById('resp_menu');
+const btnOpen = document.getElementById('menuToggle');
+const btnClose = document.getElementById('menuClose');
 
 function openClosedRespmenu() {
+  if (!box) return;
+
   if (box.classList.contains('closed_menu')) {
     box.classList.remove('closed_menu');
     box.setAttribute('aria-hidden', 'false');
@@ -88,5 +133,7 @@ function openClosedRespmenu() {
   }
 }
 
-btnOpen.onclick = openClosedRespmenu;
-btnClose.onclick = openClosedRespmenu;
+if (btnOpen && btnClose && box) {
+  btnOpen.addEventListener('click', openClosedRespmenu);
+  btnClose.addEventListener('click', openClosedRespmenu);
+}
